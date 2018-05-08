@@ -1,0 +1,73 @@
+/* =============================================================== GERAL */
+body
+{
+  background-color: yellow; }
+
+
+#botaoBranco
+{
+  background-color: white;
+  color:black;
+}
+
+#botaoPreto
+{
+  background-color: black;
+  color:white;
+}
+
+#botaoAzul
+{
+  background-color: blue;
+  color:white;
+}
+
+#botaoAmarelo {
+  background-color: yellow;
+  color:black;
+}
+
+#linkVoltar
+{
+  color:white;
+}
+
+.botao__contraste
+{
+  border: solid 1px black;
+}
+
+.painel
+{
+  background-color: inherit;
+}
+
+.rodape
+{
+  background-color: blue;
+}
+
+.cabecalho
+{
+  background-color: blue;
+  color:yellow;
+  -webkit-box-shadow: -10px -10px black;
+          box-shadow: -10px -10px black;
+}
+
+.titulo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color:blue;
+}
+
+.subtitulo
+{
+  font-size: 1em;
+  color:blue;
+}
+
+#linkVoltar
+{
+  color:yellow;
+}
