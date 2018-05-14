@@ -3,7 +3,7 @@
 	function submitQuiz() {
 		console.log('submitted');
 
-
+	
 		function answerScore (qName) {
 			var radiosNo = document.getElementsByName(qName);
 
@@ -26,8 +26,8 @@
 
 	
 		function correctAnswer (correctStringNo, qNumber) {
-			console.log("qNumber: " + qNumber);  below
-			return ("A resposta certa para questão #" + qNumber + ": &nbsp;<strong>" +
+			console.log("qNumber: " + qNumber); 
+			return ("A resposta correta para questão #" + qNumber + ": &nbsp;<strong>" +
 				(document.getElementById(correctStringNo).innerHTML) + "</strong>");
 			}
 
