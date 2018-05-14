@@ -10,6 +10,12 @@
     border-radius: 50%;
 }
 
+#conteudo
+{
+    height: auto;
+    min-height: 600px;
+}
+
 .icone--pequeno
 {
   width: 7em;
@@ -112,6 +118,12 @@
 {
   font-size: 2em;
   padding: 1em;
+}
+
+#tituloTeste
+{
+    position:absolute;
+    left: 400px;
 }
 
 /* ============================================================================= TELA PEQUENA */

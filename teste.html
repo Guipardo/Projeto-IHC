@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <title>Teste seu conhecimento</title>
@@ -7,6 +7,8 @@
         <link rel="stylesheet" type="text/css" href="estilos/reset.css"/>
         <link rel="stylesheet" type="text/css" href="estilos/page_template.css"/>
         <link id="temas" rel="stylesheet" type="text/css" href="estilos/temas/temaBranco.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="estilos/styleCanvas.css">
     </head>
 
  <body>
@@ -29,6 +31,33 @@
         <section class="conteudo" id="conteudo">
 
             <!-- CONTEÚDOS DE TESTES ENTRA AQUI -->
+            <canvas id="canvas" width="800px" height="600px"></canvas>
+                <h1 class="titulo" id="tituloTeste"> Desenhe o corpo humano </h1>        
+            
+                    <div class="controls">
+                        <ul class="colors">
+                            <li class="red selected"></li>
+                            <li class="blue"></li>
+                            <li class="yellow"></li>
+                            <li class="eraser"></li>
+                        </ul>
+
+                        <ul class="weights">
+                            <li class="small selected" onClick="choose('5')"></li>
+                            <li class="medium" onClick="choose('10')"></li>
+                            <li class="large" onClick="choose('30')"></li>
+                        </ul>
+
+                    <!-- 	<button class="undo" onClick="javascript:cUndo();return false;">Undo</button>
+                        <button class="redo" onClick="javascript:cRedo();return false;">Redo</button> -->
+                        <button class="reset">Limpar</button>
+                    </div>
+                      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+
+
+                        <script  src="scripts/canvas.js"></script>
+
 
         </section>
 
