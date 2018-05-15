@@ -32,6 +32,7 @@ function iconesBranco()
   mudaIcone("iconeJogo","JOGO_BRANCO","png");
   mudaIcone("iconeVideo","VIDEO_BRANCO","png");
   mudaIcone("iconeLeitura","LEITURA_BRANCO","png");
+  mudaIcone("iconeLapis","LAPIS_BRANCO","png");
   mudaSom("botao__audio","SOM_BRANCO","png");
 }
 
@@ -42,6 +43,7 @@ function iconesPreto()
   mudaIcone("iconeJogo","JOGO_PRETO","png");
   mudaIcone("iconeVideo","VIDEO_PRETO","png");
   mudaIcone("iconeLeitura","LEITURA_PRETO","png");
+  mudaIcone("iconeLapis","LAPIS_PRETO","png");
   mudaSom("botao__audio","SOM_PRETO","png");
 }
 
@@ -52,6 +54,7 @@ function iconesAmarelo()
   mudaIcone("iconeJogo","JOGO_AMARELO","png");
   mudaIcone("iconeVideo","VIDEO_AMARELO","png");
   mudaIcone("iconeLeitura","LEITURA_AMARELO","png");
+  mudaIcone("iconeLapis","LAPIS_AMARELo","png");
   mudaSom("botao__audio","SOM_AMARELO","png");
 }
 
@@ -62,6 +65,7 @@ function iconesAzul()
   mudaIcone("iconeJogo","JOGO_AZUL","png");
   mudaIcone("iconeVideo","VIDEO_AZUL","png");
   mudaIcone("iconeLeitura","LEITURA_AZUL","png");
+  mudaIcone("iconeLapis","LAPIS_AZUL","png");
   mudaSom("botao__audio","SOM_AZUL","png");
 }
 

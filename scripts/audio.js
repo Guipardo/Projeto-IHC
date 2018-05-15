@@ -24,15 +24,13 @@ function audioVideo()
     document.getElementById("audioVideo").play();
 }
 
-
-// ============================================================================ LEITURA DO CORPO HUMANO
-function audioClick()
+function audioDesenho()
 {
-    var audio = document.getElementById("audioClick");
-    audio.currentTime = 0;
-    audio.play();
+    document.getElementById("audioDesenho").play();
 }
 
+
+// ============================================================================ LEITURA DO CORPO HUMANO
 function audioCerebro()
 {
     var audio = document.getElementById("audioCerebro");

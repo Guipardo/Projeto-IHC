@@ -16,7 +16,7 @@
     <meta property="og:title" content="Aprendendo sobre o corpo humano" />
     <meta property="og:description" content="Site com o intuito de ensinar crianças de
     todos os tipos sobre o corpo humano e como ele funciona" />
-    <meta property="og:image" content="images/logotipo.png" />
+    <meta property="og:image" content="imagens/logotipo.png" />
     <link rel="stylesheet" type="text/css" href="estilos/reset.css"/>
     <link rel="stylesheet" type="text/css" href="estilos/layout.css"/>
     <link id="temas" rel="stylesheet" type="text/css" href="estilos/temas/temaBranco.css"/>
@@ -40,6 +40,10 @@
             </figure>
         </header>
 
+        <section id="caminho">
+            <h1 class="titulo"> Voce está na página inicial </h1>
+        </section>
+
         <!-- BLOCO DE CONTEÚDOS -->
         <section id="leitura" class="opcao">
             <input type="button" value="" class="botao__audio" onclick="javascript:audioLeitura()" onmouseover="javascript:audioLeitura()"/>
@@ -47,10 +51,35 @@
             <a href="leitura.html">
               <figure>
                 <img class="icones" id="iconeLeitura" alt="iconeLeitura" src="imagens/icones/LEITURA_BRANCO.png"/>
-                <figcaption> <h1 class="titulo"> Lendo sobre o Corpo Humano </h1> </figcaption>
+                <figcaption> <h1 class="titulo"> Sobre o Corpo Humano </h1> </figcaption>
               </figure>
             </a>
         </section>
+
+
+        <section id="corpoHumano" class="opcao">
+          <input type="button" value="" class="botao__audio" onclick="javascript:audioCorpo()" onmouseover="javascript:audioCorpo()"/>
+          <a href="conhecendo.html">
+            <audio id="audioCorpo" src="audios/" ></audio>
+            <figure>
+              <img class="icones" id="iconeCorpo" alt="iconeCorpo" src="imagens/icones/CORPO_BRANCO.png"/>
+              <figcaption> <h1 class="titulo"> Conhecendo o corpo humano </h1> </figcaption>
+            </figure>
+          </a>
+        </section>
+
+
+        <section id="videos" class="opcao">
+          <input type="button" value="" class="botao__audio" onclick="javascript:audioVideo()" onmouseover="javascript:audioVideo()"/>
+          <audio id="audioVideo" src="audios/" ></audio>
+          <a href="videos.html">
+            <figure>
+              <img class="icones" id="iconeVideo" alt="iconeVideo" src="imagens/icones/VIDEO_BRANCO.png"/>
+              <figcaption> <h1 class="titulo"> Vídeos </h1> </figcaption>
+            </figure>
+          </a>
+        </section>
+
 
         <section id="jogos" class="opcao">
             <input type="button" value="" class="botao__audio" onclick="javascript:audioJogo()" onmouseover="javascript:audioJogo()"/>
@@ -59,6 +88,18 @@
               <figure>
                 <img class="icones" id="iconeJogo" alt="iconeJogo" src="imagens/icones/JOGO_BRANCO.png"/>
                 <figcaption> <h1 class="titulo"> Jogos </h1> </figcaption>
+              </figure>
+            </a>
+        </section>
+
+
+        <section id="desenho" class="opcao">
+            <input type="button" value="" class="botao__audio" onclick="javascript:audioDesenho()" onmouseover="javascript:audioDesenho()"/>
+            <audio id="audioDesenho" src="audios/" ></audio>
+            <a href="desenho.html">
+              <figure>
+                <img class="icones" id="iconeLapis" alt="iconeLapis" src="imagens/icones/LAPIS_BRANCO.png"/>
+                <figcaption> <h1 class="titulo"> Ferramenta de Desenho </h1> </figcaption>
               </figure>
             </a>
         </section>
@@ -74,36 +115,11 @@
             </a>
         </section>
 
-        <section id="corpoHumano" class="opcao">
-            <input type="button" value="" class="botao__audio" onclick="javascript:audioCorpo()" onmouseover="javascript:audioCorpo()"/>
-            <a href="conhecendo.html">
-              <audio id="audioCorpo" src="audios/" ></audio>
-              <figure>
-                <img class="icones" id="iconeCorpo" alt="iconeCorpo" src="imagens/icones/CORPO_BRANCO.png"/>
-                <figcaption> <h1 class="titulo"> Conhecendo o corpo humano </h1> </figcaption>
-              </figure>
-            </a>
-        </section>
-
-        <section id="videos" class="opcao">
-            <input type="button" value="" class="botao__audio" onclick="javascript:audioVideo()" onmouseover="javascript:audioVideo()"/>
-            <audio id="audioVideo" src="audios/" ></audio>
-            <a href="videos.html">
-              <figure>
-                <img class="icones" id="iconeVideo" alt="iconeVideo" src="imagens/icones/VIDEO_BRANCO.png"/>
-                <figcaption> <h1 class="titulo"> Vídeos </h1> </figcaption>
-              </figure>
-            </a>
-        </section>
-
-        <!-- TEXTO DE INTRODUÇÃO -->
-        <article class="introducao">
-            <h1 class="titulo"> Site de Aprendizado </h1>
-            <h2 class="subtitulo"> Esse site tem como objetivo ensinar a todos, independente de suas diferenças, através de leitura, áudios, vídeos, atividades interativas e jogos.</h2>
-        </article>
-
         <!-- RODAPÉ -->
-        <footer class="rodape" id="rodape"></footer>
+        <footer class="rodape" id="rodape">
+            @Faculdade de Computação e Informática - Universidade Presbiteriana Mackenzie
+        </footer>
+
     </section>
     <script src="scripts/contraste.js"></script>
     <script src="scripts/audio.js"></script>

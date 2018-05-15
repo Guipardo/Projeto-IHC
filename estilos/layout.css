@@ -72,7 +72,7 @@
       -ms-flex:1;
           flex:1;
   border-radius: 2em;
-  margin: 10px;
+  margin: 5px;
 }
 
 .cabecalho
@@ -98,8 +98,8 @@
 .rodape
 {
   grid-area:rodape;
-  height: 2em;
   width: auto;
+  text-align: center;
 }
 
 #leitura
@@ -127,6 +127,16 @@
   grid-area:videos;
 }
 
+#desenho
+{
+  grid-area:desenho;
+}
+
+#caminho
+{
+  grid-area:caminho;
+}
+
 /* ============================================================================= TELA PEQUENA */
 @media only screen and (max-width:519px)
 {
@@ -135,17 +145,18 @@
       min-width: 320px;
       -ms-grid-columns: 90%;
           grid-template-columns: 90%;
-      -ms-grid-rows: 8em 12em 30em 30em 30em 30em 30em 20em 2em;
-          grid-template-rows: 8em 12em 30em 30em 30em 30em 30em 20em 2em;
+      -ms-grid-rows: 8em 12em 5em 30em 30em 30em 30em 30em 30em 2em;
+          grid-template-rows: 8em 12em 5em 30em 30em 30em 30em 30em 30em 2em;
                   grid-template-areas:
         " contraste "
         " cabecalho "
+        " caminho "
         " leitura "
-        " jogos "
-        " testes "
         " corpoHumano "
         " videos "
-        " introducao "
+        " jogos "
+        " desenho "
+        " testes "
         " rodape ";
   }
 
@@ -207,17 +218,18 @@
       min-width: 520px;
       -ms-grid-columns: 90%;
           grid-template-columns: 90%;
-      -ms-grid-rows: 5em 11em 30em 30em 30em 30em 30em 20em 2em;
-          grid-template-rows: 5em 11em 30em 30em 30em 30em 30em 20em 2em;
+      -ms-grid-rows: 5em 11em 5em 30em 30em 30em 30em 30em 30em 2em;
+          grid-template-rows: 5em 11em 5em 30em 30em 30em 30em 30em 30em 2em;
                   grid-template-areas:
         " contraste "
         " cabecalho "
+        " caminho "
         " leitura "
-        " jogos "
-        " testes "
         " corpoHumano "
         " videos "
-        " introducao "
+        " jogos "
+        " desenho "
+        " testes "
         " rodape ";
   }
 
@@ -266,15 +278,15 @@
       min-width: 800px;
       -ms-grid-columns: 45% 45%;
           grid-template-columns: 45% 45%;
-      -ms-grid-rows: 5em 15em 30em 30em 30em 30em 30em 2em;
-          grid-template-rows: 5em 15em 30em 30em 30em 30em 30em 2em;
+      -ms-grid-rows: 5em 15em 5em 30em 30em 30em 2em;
+          grid-template-rows: 5em 15em 5em 30em 30em 30em 2em;
                   grid-template-areas:
         " contraste contraste"
         " cabecalho cabecalho "
-        " leitura jogos "
-        " testes corpoHumano "
-        " videos videos "
-        " introducao introducao "
+        " caminho caminho "
+        " leitura corpoHumano "
+        " videos jogos "
+        " desenho testes "
         " rodape rodape ";
   }
 
@@ -321,16 +333,17 @@
   {
       margin: 0 auto;
       min-width: 1130px;
-      -ms-grid-columns: 18% 18% 18% 18% 18%;
-          grid-template-columns: 18% 18% 18% 18% 18%;
-      -ms-grid-rows: 2em 10em 20em 10em 2em;
-          grid-template-rows: 2em 10em 20em 10em 2em;
+
+      -ms-grid-columns: 12% 12% 12% 12% 12% 12%;
+          grid-template-columns: 12% 12% 12% 12% 12% 12%;
+      -ms-grid-rows: 1em 9em 0.1em 15em 2em;
+          grid-template-rows: 1em 9em 0.1em 15em 2em;
                   grid-template-areas:
-        " contraste contraste contraste contraste contraste"
-        " cabecalho cabecalho cabecalho cabecalho cabecalho"
-        " leitura jogos testes corpoHumano videos"
-        " introducao introducao introducao introducao introducao "
-        " rodape rodape rodape rodape rodape";
+        " contraste contraste contraste contraste contraste contraste"
+        " cabecalho cabecalho cabecalho cabecalho cabecalho cabecalho"
+        " caminho caminho caminho caminho caminho caminho"
+        " leitura corpoHumano videos jogos desenho testes"
+        " rodape rodape rodape rodape rodape rodape";
   }
 
   .botao__contraste
@@ -343,7 +356,7 @@
   {
     width: 30em;
     height: 9em;
-    top:-7em;
+    top:-8em;
   }
 
   #tituloDoMenu

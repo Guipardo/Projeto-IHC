@@ -4,8 +4,8 @@
         <title>Jogos</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="estilos/reset.css"/>
         <link rel="stylesheet" type="text/css" href="estilos/page_template.css"/>
+        <link rel="stylesheet" type="text/css" href="estilos/estiloJogo.css"/>
         <link id="temas" rel="stylesheet" type="text/css" href="estilos/temas/temaBranco.css"/>
     </head>
 
@@ -20,18 +20,76 @@
       </section>
 
 
-        <!-- MENU DE NAVEGAÇÃO -->
-        <header class="cabecalho" id="cabecalho">
-            <img src="imagens/icones/JOGO_BRANCO.png" class="icone--pequeno" id="iconeJogo" alt="jogo"/>
-            <h1 id="tituloDoMenu"> Jogos </h1>
-        </header>
+      <!-- MENU DE NAVEGAÇÃO -->
+      <header class="cabecalho" id="cabecalho">
+          <img src="imagens/icones/JOGO_BRANCO.png" class="icone--pequeno" id="iconeJogo" alt="jogo"/>
+          <h1 id="tituloDoMenu"> Jogos </h1>
+      </header>
 
         <!-- BLOCO DE CONTEÚDOS -->
         <section class="conteudo" id="conteudo">
 
-            <!-- CONTEÚDOS DE JOGOS ENTRA AQUI -->
+        <section id="telaInicial">
+          <h4>Conhecendo o Corpo Humano</h4>
+          <h3 style="border-bottom: 1px solid white; margin-right: 30px; margin-left: 30px;">
+            Instruções: Selecione o Botão jogar para iniciar o Jogo.</h3>
 
+          <div id="componentesIniciais">
+            <img class="crianca" src="imagens/jogo/menina.png" alt="Imagem de uma menina">
+            <div id="jogar" tabIndex="0" onclick="comecarJogo()" onKeyDown="pressionarPlay(event)">
+              <h3>Jogar</h3>
+              <img id="play" src="imagens/jogo/play.png" alt="Imagem para iniciar o jogo">
+            </div>
+            <img class="crianca" src="imagens/jogo/menino.png" alt="Imagem de um menino">
+          </div>
         </section>
+
+        <section id="telaJogo">
+          <h4>Jogo do Corpo Humano: Para jogar, selecione a parte do corpo corresponte a sua descrição, para navegar entre as opções utilize as setas do teclado, e para selecionar utilize Enter. </h4>
+            <div id="imagens">
+              <h2>Parte do Corpo</h2>
+              <div id="arquivosImagens">
+                <img class="imagem" src="imagens/jogo/cabeca.png" alt="Imagem de uma cabeça" tabindex="1" value="cabeça" onkeyDown="pressionarImagem(this, event)" onclick="selecionarImagem(this, event) ">
+                <img class="imagem" src="imagens/jogo/braco.png" alt="Imagem de um braço" tabindex="2" value="braço" onkeyDown="pressionarImagem(this, event)" onclick="selecionarImagem(this, event)">
+                <img class="imagem" src="imagens/jogo/visibility.png" alt="Imagem de um olho" tabindex="3" value="olho" onkeyDown="pressionarImagem(this, event)" onclick="selecionarImagem(this, event)">
+                <img class="imagem" src="imagens/jogo/pernas.png" alt="Imagem de uma perna" tabindex="4" value="perna" onkeyDown="pressionarImagem(this, event)" onclick="selecionarImagem(this, event)">
+                <img class="imagem" src="imagens/jogo/nariz.png" alt="Imagem de um nariz" tabindex="5" value="nariz" onkeyDown="pressionarImagem(this, event)" onclick="selecionarImagem(this, event)">
+              </div>
+            </div>
+
+            <div id="textos">
+              <h2>Descrição</h2>
+              <div id="paragrafos">
+                <p value="perna" tabindex="4" onkeyDown="pressionarTexto(this, event)" onclick="selecionarTexto(this)">
+                  Parte do corpo usamos para andar
+                </p>
+                <p value="cabeça" tabindex="5" onkeyDown="pressionarTexto(this, event)" onclick="selecionarTexto(this)">
+                  Parte do corpo onde ficam os olhos, orelhas, nariz e boca
+                </p>
+                <p value="nariz" tabindex="6" onkeyDown="pressionarTexto(this, event)" onclick="selecionarTexto(this)">
+                  Parte do corpo que usamos para sentir cheiros
+                </p>
+                <p value="braço" tabindex="7" onkeyDown="pressionarTexto(this, event)" onclick="selecionarTexto(this)">
+                  Parte do corpo que usamos para pegar coisas
+                </p>
+                <p value="olho" tabindex="8" onkeyDown="pressionarTexto(this, event)" onclick="selecionarTexto(this)">
+                  Parte do corpo que usamos para ver as coisas
+                </p>
+              </div>
+            </div>
+          </section>
+
+        <section id="telaFinal">
+          <h1 id="titulo">Parabéns, você venceu!</h1>
+          <div id="conteudoFinal">
+            <img id="pikachu" src="imagens/jogo/parabens.gif" alt="Imagem comemoração">
+            <div id="reiniciar" tabIndex="0" onclick="comecarJogo()" onKeyDown="pressionarPlay(event)">
+              <h3>Jogar Novamente</h3>
+              <img id="play" src="imagens/jogo/restart.png" alt="Imagem para iniciar o jogo">
+            </div>
+          </div>
+        </section>
+      </section>
 
         <!-- RODAPE -->
         <footer class="rodape" id="rodape">
@@ -40,5 +98,6 @@
         <!-- SCRIPTS -->
     </section>
     <script src="scripts/contraste.js"></script>
+    <script src="scripts/jogo.js"></script>
 </body>
 </html>

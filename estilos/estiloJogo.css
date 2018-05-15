@@ -1,0 +1,189 @@
+a { text-decoration: none; color:black; }
+body { font-family: Arial, sans-serif; }
+
+#titulo{
+	font-family: Century Gothic;
+	background: #5769B8;
+	text-align: center;
+	font-weight: bold;
+	padding: 15px;
+	color: white;
+}
+
+h2{
+	font-family: Century Gothic;
+	background: #5769B8;
+	margin-bottom: 15px;
+	text-align: center;
+	padding: 15px;
+	margin-top: 0;
+	color: white;
+}
+
+h4{
+	font-family: Century Gothic;
+	font-size: 1.5em!important;
+	background: #5769B8;
+	text-align: center;
+	font-weight: bold;
+	padding: 15px;
+	color: white;
+}
+
+h3{
+	font-family: Century Gothic;
+	font-size: 1.2em!important;
+	text-align: center;
+	color: white;
+}
+
+#jogar{
+	background-color: #5769B8;
+	border-radius: 50%;
+	cursor: pointer;
+	padding: 20px;
+	width: 15%;
+}
+
+#play{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	width: 30%;
+}
+
+#telaInicial{
+	border-radius: 4px;
+	background: #00BFFF;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	height: 100%;
+	width: 70%;
+}
+
+#componentesIniciais{
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	margin-bottom: 20%;
+	margin-top: 20%;
+	display: flex;
+}
+
+.crianca{
+  height: 25%;
+	width: 20%;
+}
+
+#telaJogo{
+	margin-right: auto;
+	margin-left: auto;
+	display: none;
+	height: auto;
+	width: 70%;
+}
+
+#arquivosImagens{
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+    display: flex;
+	max-height: 70%;
+}
+
+#imagens{
+  background: #00BFFF;
+  border-radius: 4px;
+  width: 49.5%;
+  height: 100%;
+  float: left;
+}
+
+.imagem{
+	border: 3px solid transparent;
+	border-radius: 4px;
+	margin-right: 10%;
+	margin-left: 10%;
+	background: white;
+	display: block;
+	width: 35%;
+	padding: 5px;
+}
+
+.imagem:hover{
+	border: 3px solid #5769B8;
+	cursor: pointer;
+}
+
+.imagem:focus{
+	border: 3px solid #5769B8;
+	cursor: pointer;
+}
+
+#textos{
+	background: #00BFFF;
+	border-radius: 4px;
+	height: 100%;
+	float: right;
+	width: 50%;
+}
+
+#paragrafos{
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+    display: flex;
+	height: 90%;
+}
+
+p{
+	border: 3px solid transparent;
+	font-family: Century Gothic;
+	text-align: center;
+	border-radius: 4px;
+	background: white;
+	margin-right: 10%;
+	margin-left: 10%;
+	padding: 10px;
+}
+
+p:hover{
+	border: 3px #5769B8 solid;
+	cursor: pointer;
+}
+
+p:focus{
+	border: 3px #5769B8 solid;
+	cursor: pointer;
+}
+
+#telaFinal{
+	background: #00BFFF;
+	border-radius: 4px;
+	margin-right: auto;
+	margin-left: auto;
+	display: none;
+	height: 100%;
+	width: 70%;
+}
+
+#conteudoFinal{
+	margin: 15% auto;
+	width: 50%;
+}
+
+#reiniciar{
+	background-color: #5769B8;
+	border-radius: 50%;
+	margin: 10px auto;
+	cursor: pointer;
+	padding: 20px;
+	width: 35%;
+}
+
+#pikachu{
+	margin: 20px auto;
+	display: block;
+	width: 70%;
+}
