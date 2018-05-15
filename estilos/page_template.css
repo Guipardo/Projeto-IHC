@@ -10,6 +10,13 @@
     border-radius: 50%;
 }
 
+#bloco-partes-corpo
+{
+    height: auto;
+    min-height: 600px;
+    margin-left: 4em;
+}
+
 #conteudo
 {
     height: auto;
@@ -30,6 +37,28 @@
   background-size: 100%;
   background-image: url("../imagens/icones/SOM_BRANCO.png");
   background-repeat: no-repeat;
+  width: 14em;
+  height: 14em;
+}
+
+.descricao
+{
+  text-align: justify;
+}
+
+.partes-do-corpo
+{
+  width: 100%;
+  margin-top: 8em;
+  align-self: baseline;
+}
+
+#bloco-partes-corpo
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
 }
 
 #logotipo
