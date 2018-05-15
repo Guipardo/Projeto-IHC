@@ -5,9 +5,9 @@
     height: auto;
 }
 
-#tituloDoMenu
+.icones
 {
-  font-family: 'arial',sans-serif;
+    border-radius: 50%;
 }
 
 #bloco-partes-corpo
@@ -20,7 +20,7 @@
 #conteudo
 {
     height: auto;
-    min-height: 600px;
+    min-height: 450px;
 }
 
 .icone--pequeno
@@ -59,6 +59,13 @@
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+}
+
+#logotipo
+{
+  position: relative;
+  bottom: 0;
+  float: right;
 }
 
 .painel
@@ -140,6 +147,12 @@
 {
   font-size: 2em;
   padding: 1em;
+}
+
+#tituloTeste
+{
+    position:absolute;
+    left: 300px;
 }
 
 /* ============================================================================= TELA PEQUENA */

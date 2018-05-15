@@ -100,3 +100,94 @@ function pararAudio(id)
     audio.pause();
     audio.currentTime = 0;
 }
+
+
+// ============================================================================ QUIZ
+
+function audiopergunta1()
+{
+    var audio = document.getElementById("perg1");
+    audio.play();
+}
+
+function audiopergunta2()
+{
+    var audio = document.getElementById("perg2");
+    audio.play();
+}
+
+function audiopergunta3()
+{
+    var audio = document.getElementById("perg3");
+    audio.play();
+}
+
+function audiopergunta4()
+{
+    var audio = document.getElementById("perg4");
+    audio.play();
+}
+
+function audionariz()
+{
+    var audio = document.getElementById("nariz");
+    audio.play();
+}
+
+function audiobraco()
+{
+    var audio = document.getElementById("braco");
+    audio.play();
+}
+
+function audioperna2()
+{
+    var audio = document.getElementById("perna");
+    audio.play();
+}
+
+function audiomao()
+{
+    var audio = document.getElementById("mao");
+    audio.play();
+}
+
+
+function audiocabeca()
+{
+    var audio = document.getElementById("cabeca");
+    audio.play();
+}
+
+function audiocerebro2()
+{
+    var audio = document.getElementById("cerebro");
+    audio.play();
+}
+
+function audiocoracao2()
+{
+    var audio = document.getElementById("coracao");
+    audio.play();
+}
+
+function audiointestino()
+{
+    var audio = document.getElementById("intestino");
+    audio.play();
+}
+
+function audioestomago()
+{
+    var audio = document.getElementById("estomago");
+    audio.play();
+}
+
+
+function audioboca()
+{
+    var audio = document.getElementById("boca");
+    audio.play();
+}
+
+
