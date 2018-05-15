@@ -1,6 +1,3 @@
-a { text-decoration: none; color:black; }
-body { font-family: Arial, sans-serif; }
-
 #titulo{
 	font-family: Century Gothic;
 	background: #5769B8;
@@ -8,12 +5,12 @@ body { font-family: Arial, sans-serif; }
 	font-weight: bold;
 	padding: 15px;
 	color: white;
+	margin-top: 0;
 }
 
 h2{
 	font-family: Century Gothic;
 	background: #5769B8;
-	margin-bottom: 15px;
 	text-align: center;
 	padding: 15px;
 	margin-top: 0;
@@ -22,12 +19,13 @@ h2{
 
 h4{
 	font-family: Century Gothic;
-	font-size: 1.5em!important;
 	background: #5769B8;
 	text-align: center;
 	font-weight: bold;
+	font-size: 1.5em!important;
 	padding: 15px;
 	color: white;
+	margin-top: 0;
 }
 
 h3{
@@ -35,155 +33,150 @@ h3{
 	font-size: 1.2em!important;
 	text-align: center;
 	color: white;
+	margin-top: 0;
 }
 
-#jogar{
-	background-color: #5769B8;
-	border-radius: 50%;
-	cursor: pointer;
-	padding: 20px;
-	width: 15%;
-}
-
-#play{
-	margin-right: auto;
-	margin-left: auto;
-	display: block;
-	width: 30%;
-}
-
-#telaInicial{
+#telaInicial, #telaJogo, #telaFinal{
 	border-radius: 4px;
-	background: #00BFFF;
-	margin-right: auto;
-	margin-left: auto;
-	display: block;
-	height: 100%;
-	width: 70%;
-}
-
-#componentesIniciais{
-	justify-content: space-around;
-	align-items: center;
-	flex-direction: row;
-	margin-bottom: 20%;
-	margin-top: 20%;
-	display: flex;
-}
-
-.crianca{
-  height: 25%;
-	width: 20%;
-}
-
-#telaJogo{
 	margin-right: auto;
 	margin-left: auto;
 	display: none;
-	height: auto;
+	height: 45em;
 	width: 70%;
 }
 
-#arquivosImagens{
-	justify-content: space-between;
-	flex-direction: column;
-	align-items: center;
-    display: flex;
-	max-height: 70%;
-}
-
-#imagens{
-  background: #00BFFF;
-  border-radius: 4px;
-  width: 49.5%;
-  height: 100%;
-  float: left;
-}
-
-.imagem{
-	border: 3px solid transparent;
-	border-radius: 4px;
-	margin-right: 10%;
-	margin-left: 10%;
-	background: white;
+#telaInicial{
+	background: #00BFFF;
 	display: block;
-	width: 35%;
-	padding: 5px;
 }
 
-.imagem:hover{
-	border: 3px solid #5769B8;
+#jogar{
+	padding: 20px;
+	width: 10%;
+	background-color: #5769B8;
+	border-radius: 50%;
 	cursor: pointer;
 }
 
-.imagem:focus{
+#play{
+	width: 30%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#componentesIniciais{
+	margin-top: 10%;
+	margin-bottom: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+.crianca{
+	width: 20%;
+    height: 25%;
+}
+
+#telaJogo{
+	display: none;
+	background-color: white;
+}
+
+#arquivosImagens{
+	height: 90%;
+    display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+#imagens{
+	width: 49.5%;
+    height: 100%;
+    background: #00BFFF;
+    float: left;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.imagem{
+    width: 25%;
+    height: 15%;
+    display: flex;
+	border-radius: 4px;
+	position: relative;
+	background: white;
+	border: 3px solid transparent;
+	padding: 5px;
+}
+
+.imagem:hover, .imagem:focus{
 	border: 3px solid #5769B8;
 	cursor: pointer;
 }
 
 #textos{
-	background: #00BFFF;
-	border-radius: 4px;
-	height: 100%;
 	float: right;
 	width: 50%;
+	height: 100%;
+    background: #00BFFF;
+    border-radius: 4px;
+    text-align: center;
 }
 
 #paragrafos{
-	justify-content: space-between;
-	flex-direction: column;
-	align-items: center;
-    display: flex;
 	height: 90%;
+    display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
 }
 
 p{
-	border: 3px solid transparent;
-	font-family: Century Gothic;
+	margin: 0;
+	width: 80%;
 	text-align: center;
-	border-radius: 4px;
 	background: white;
-	margin-right: 10%;
-	margin-left: 10%;
+	font-family: Century Gothic;
 	padding: 10px;
+	border: 3px solid transparent;
+	border-radius: 4px;
 }
 
-p:hover{
-	border: 3px #5769B8 solid;
-	cursor: pointer;
-}
-
-p:focus{
+p:hover, p:focus{
 	border: 3px #5769B8 solid;
 	cursor: pointer;
 }
 
 #telaFinal{
 	background: #00BFFF;
-	border-radius: 4px;
-	margin-right: auto;
-	margin-left: auto;
 	display: none;
-	height: 100%;
-	width: 70%;
 }
 
 #conteudoFinal{
-	margin: 15% auto;
-	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+    display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
 }
 
 #reiniciar{
+	padding: 20px;
+	width: 20%;
 	background-color: #5769B8;
 	border-radius: 50%;
-	margin: 10px auto;
 	cursor: pointer;
-	padding: 20px;
-	width: 35%;
+	margin: 10px auto;
 }
 
 #pikachu{
-	margin: 20px auto;
-	display: block;
 	width: 70%;
+	display: block;
+	margin: 20px auto;
 }
