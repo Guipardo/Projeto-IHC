@@ -1,37 +1,34 @@
 
-
 	function submitQuiz() {
 		console.log('submitted');
 
-	
 		function answerScore (qName) {
 			var radiosNo = document.getElementsByName(qName);
 
 			for (var i = 0, length = radiosNo.length; i < length; i++) {
    				if (radiosNo[i].checked) {
-			
+
 					var answerValue = Number(radiosNo[i].value);
 				}
 			}
-			
+
 			if (isNaN(answerValue)) {
 				answerValue = 0;
 			}
 			return answerValue;
 		}
 
-	
 		var calcScore = (answerScore('q1') + answerScore('q2') + answerScore('q3') + answerScore('q4'));
-		console.log("CalcScore: " + calcScore); 
+		console.log("CalcScore: " + calcScore);
 
-	
+
 		function correctAnswer (correctStringNo, qNumber) {
-			console.log("qNumber: " + qNumber); 
+			console.log("qNumber: " + qNumber);
 			return ("A resposta correta para questão #" + qNumber + ": &nbsp;<strong>" +
 				(document.getElementById(correctStringNo).innerHTML) + "</strong>");
 			}
 
-	
+
 		if (answerScore('q1') === 0) {
 			document.getElementById('correctAnswer1').innerHTML = correctAnswer('correctString1', 1);
 		}
@@ -45,7 +42,6 @@
 			document.getElementById('correctAnswer4').innerHTML = correctAnswer('correctString4', 4);
 		}
 
-	
 		var questionCountArray = document.getElementsByClassName('question');
 
 		var questionCounter = 0;
@@ -53,9 +49,8 @@
 			questionCounter++;
 		}
 
-	
 		var showScore = "Sua Pontuação: " + calcScore +"/" + questionCounter;
-	
+
 		if (calcScore === questionCounter) {
 			showScore = showScore + "&nbsp; <strong>Pontuação Perfeita!</strong>"
 		};

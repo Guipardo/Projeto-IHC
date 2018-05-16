@@ -3,38 +3,47 @@
     <head>
         <title>Leitura</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ARQUIVOS CSS -->
         <link rel="stylesheet" type="text/css" href="estilos/reset.css"/>
-        <link rel="stylesheet" type="text/css" href="estilos/page_template.css"/>
+        <link rel="stylesheet" type="text/css" href="estilos/page-template.css"/>
         <link id="temas" rel="stylesheet" type="text/css" href="estilos/temas/temaBranco.css"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
  <body>
-    <section class="painel" id="painel">
+    <section class="conteiner" id="conteiner">
 
+      <!-- BOTOES PARA TROCAR O CONTRASTE DA PÁGINA -->
       <section class="menu__contraste">
-          <!-- BOTOES DE TEMA -->
-          <button type="button" onclick="temaAzul()" class="botao__contraste" id="botaoAzul"> AZUL </button>
-          <button type="button" onclick="temaPreto()" class="botao__contraste" id="botaoPreto"> PRETO </button>
-          <button type="button" onclick="temaBranco()" class="botao__contraste" id="botaoBranco"> BRANCO </button>
-          <button type="button" onclick="temaAmarelo()" class="botao__contraste" id="botaoAmarelo"> AMARELO </button>
+          <button type="button" onclick="temaAzul();"    class="botao__contraste" id="botaoAzul">    AZUL    </button>
+          <button type="button" onclick="temaPreto();"   class="botao__contraste" id="botaoPreto">   PRETO   </button>
+          <button type="button" onclick="temaBranco();"  class="botao__contraste" id="botaoBranco">  BRANCO  </button>
+          <button type="button" onclick="temaAmarelo();" class="botao__contraste" id="botaoAmarelo"> AMARELO </button>
       </section>
 
-        <!-- MENU DE NAVEGAÇÃO -->
-        <header class="cabecalho" id="cabecalho">
-            <img src="imagens/icones/LEITURA_BRANCO.png" class="icone--pequeno" id="iconeLeitura" alt="leitura"/>
-            <h1 id="tituloDoMenu"> Lendo sobre o Corpo Humano </h1>
-        </header>
+      <!-- CABEÇALHO DA PÁGINA -->
+      <header class="cabecalho" id="cabecalho">
+          <img src="imagens/icones/LEITURA_BRANCO.png" class="icone--pequeno" id="iconeLeitura" alt="leitura"/>
+          <h1 id="tituloDoMenu"> Lendo sobre o Corpo Humano </h1>
+      </header>
 
-        <!-- BLOCO DE CONTEÚDOS -->
-        <section class="conteudo" id="bloco-partes-corpo">
+      <!-- MENU DE NAVEGAÇÃO - INDICA ONDE O USUÁRIO ESTÁ NA PÁGINA -->
+      <nav id="navegacao">
+          <h1 class="titulo"> Início - Leitura </h1>
+      </nav>
 
-        <div class="partes-do-corpo" onmouseover="javascript:audioCerebro();" onmouseout="javascript:pararAudio('audioCerebro');">
-            <input type="button" value="" class="botao__audio"
-            onclick="javascript:audioCerebro();"/>
-            <audio id="audioCerebro" src="audios/cerebro.mp4" ></audio>
-            <h1 class="titulo"> Cérebro </h1>
-            <h2 class="descricao">
+      <!-- BLOCO DE CONTEÚDOS -->
+      <section class="conteudo" id="bloco-partes-corpo">
+
+      <div class="partes-do-corpo" onmouseover="javascript:audioCerebro();"
+        onmouseout="javascript:pararAudio('audioCerebro');">
+          <input type="button" value="" class="botao__audio" onclick="javascript:audioCerebro();"/>
+          <audio id="audioCerebro" src="audios/cerebro.mp4" ></audio>
+
+          <h1 class="titulo"> Cérebro </h1>
+          <h2 class="descricao">
               O cérebro fica dentro da nossa cabeça, ele faz milhões de coisas,
               pensa, sente e decide. Ele é quem faz todas as partes do corpo funcionar,
               mandando mensagens o dia todo, através de uma imensa rede de neurônios,
@@ -44,13 +53,14 @@
               mais na infância temos mais facilidade, porque as conexões entre as células
               do cérebro ainda estão se formando, o cérebro trabalha o dia todo até quando a gente
               dorme. Você sabia o cérebro é mole com uma gelatina?
-            </h2>
-          </div>
+          </h2>
+        </div>
 
-          <div class="partes-do-corpo" onmouseover="javascript:audioCincoSentidos();" onmouseout="javascript:pararAudio('audioCincoSentidos');">
-            <input type="button" value="" class="botao__audio"
-            onclick="javascript:audioCincoSentidos();"/>
+        <div class="partes-do-corpo" onmouseover="javascript:audioCincoSentidos();"
+          onmouseout="javascript:pararAudio('audioCincoSentidos');">
+            <input type="button" value="" class="botao__audio" onclick="javascript:audioCincoSentidos();"/>
             <audio id="audioCincoSentidos" src="audios/cinco-sentidos.mp4" ></audio>
+
             <h1 class="titulo"> Cinco Sentidos </h1>
             <h2 class="descricao">
               Com o meu corpo eu posso ver, cheirar, ouvir, saborear, tocar,
@@ -63,12 +73,13 @@
               para ver se o alimento é picante ou não, com o tato eu posso sentir
               se uma bola é dura ou macia.
             </h2>
-          </div>
+        </div>
 
-          <div class="partes-do-corpo" onmouseover="javascript:audioCoracao();" onmouseout="javascript:pararAudio('audioCoracao')">
-            <input type="button" value="" class="botao__audio"
-            onclick="javascript:audioCoracao();"/>
+        <div class="partes-do-corpo" onmouseover="javascript:audioCoracao();"
+          onmouseout="javascript:pararAudio('audioCoracao')">
+            <input type="button" value="" class="botao__audio" onclick="javascript:audioCoracao();"/>
             <audio id="audioCoracao" src="audios/coracao.mp4" ></audio>
+
             <h1 class="titulo"> Coração </h1>
             <h2 class="descricao">
               O coração é um musculo com duas partes, uma parte bombeia
@@ -80,12 +91,13 @@
               e o coração como as outras partes do corpo também cresce,
               ele é um pouco maior que o seu punho.
             </h2>
-          </div>
+        </div>
 
-          <div class="partes-do-corpo" onmouseover="javascript:audioEsqueleto();" onmouseout="javascript:pararAudio('audioEsqueleto');">
-            <input type="button" value="" class="botao__audio"
-            onclick="javascript:audioEsqueleto();"/>
+        <div class="partes-do-corpo" onmouseover="javascript:audioEsqueleto();"
+        onmouseout="javascript:pararAudio('audioEsqueleto');">
+            <input type="button" value="" class="botao__audio" onclick="javascript:audioEsqueleto();"/>
             <audio id="audioEsqueleto" src="audios/esqueleto.mp4" ></audio>
+
             <h1 class="titulo"> Esqueleto </h1>
             <h2 class="descricao">
                 Os ossos são muito fortes e protegem os órgãos mole do corpo,
@@ -104,12 +116,13 @@
                 caixa torácica, coluna vertebral, quadril, úmero, radio, carpo, metacarpo,
                 falange, fêmur, tíbia, tarso, metatarso, falange.
             </h2>
-          </div>
+        </div>
 
-          <div class="partes-do-corpo" onmouseover="javascript:audioMusculo();" onmouseout="javascript:pararAudio('audioMusculo');">
-            <input type="button" value="" class="botao__audio"
-            onclick="javascript:audioMusculo();"/>
+        <div class="partes-do-corpo" onmouseover="javascript:audioMusculo();"
+          onmouseout="javascript:pararAudio('audioMusculo');">
+            <input type="button" value="" class="botao__audio" onclick="javascript:audioMusculo();"/>
             <audio id="audioMusculo" src="audios/musculo.mp4" ></audio>
+
             <h1 class="titulo"> Músculo </h1>
             <h2 class="descricao">
                 Em todo o corpo entre a pele e os ossos, você tem os músculos.
@@ -122,12 +135,13 @@
                 direito e todos são muito importantes. Você sabia que o maior musculo
                 está no bumbum e ele se chama glúteos máximus?
             </h2>
-          </div>
+        </div>
 
-          <div class="partes-do-corpo" onmouseover="javascript:audioPulmao();" onmouseout="javascript:pararAudio('audioPulmao');">
-            <input type="button" value="" class="botao__audio"
-            onclick="javascript:audioPulmao();"/>
+        <div class="partes-do-corpo" onmouseover="javascript:audioPulmao();"
+        onmouseout="javascript:pararAudio('audioPulmao');">
+            <input type="button" value="" class="botao__audio" onclick="javascript:audioPulmao();"/>
             <audio id="audioPulmao" src="audios/pulmao.mp4" ></audio>
+
             <h1 class="titulo"> Pulmão </h1>
             <h2 class="descricao">
               O ar entra pelo nariz e desce pela garganta, atingindo finalmente os pulmões,
@@ -138,12 +152,13 @@
               Você sabia que a tosse é uma reação para expulsar do organismo algum
               intruso (vírus, bactéria ou poeira)?
             </h2>
-          </div>
+        </div>
 
-          <div class="partes-do-corpo" onmouseover="javascript:audioSistemaDigestorio();" onmouseout="javascript:pararAudio('audioSistemaDigestorio');">
-            <input type="button" value="" class="botao__audio"
-            onclick="javascript:audioSistemaDigestorio();"/>
+        <div class="partes-do-corpo" onmouseover="javascript:audioSistemaDigestorio();"
+          onmouseout="javascript:pararAudio('audioSistemaDigestorio');">
+            <input type="button" value="" class="botao__audio" onclick="javascript:audioSistemaDigestorio();"/>
             <audio id="audioSistemaDigestorio" src="audios/sistema-digestorio.mp4" ></audio>
+
             <h1 class="titulo"> Sistema Digestório </h1>
             <h2 class="descricao">
                 O caminho do alimento, depois de mastigar a nossa comida fara uma longa jornada,
@@ -161,12 +176,13 @@
                 jornada da nossa comida chega ao fim.
                 Você sabia que se engolir muito ar enquanto come e falar vai arrotar muito? OPS, sempre peça desculpas.
             </h2>
-          </div>
+        </div>
 
-          <div class="partes-do-corpo" onmouseover="javascript:audioSistemaNervoso();" onmouseout="javascript:pararAudio('audioSistemaNervoso');">
-            <input type="button" value="" class="botao__audio"
-            onclick="javascript:audioSistemaNervoso();"/>
+        <div class="partes-do-corpo" onmouseover="javascript:audioSistemaNervoso();"
+        onmouseout="javascript:pararAudio('audioSistemaNervoso');">
+            <input type="button" value="" class="botao__audio" onclick="javascript:audioSistemaNervoso();"/>
             <audio id="audioSistemaNervoso" src="audios/sistema-nervoso.mp4" ></audio>
+
             <h1 class="titulo"> Sistema Nervoso e Circulatório </h1>
             <h2 class="descricao">
                 Temos três tipos de pequenos tubos que percorrem o nosso
@@ -186,12 +202,13 @@
                 Você sabia que o sangue é vermelho como um molho de tomate,
                 quando você se machuca, você consegue vê-lo?
             </h2>
-          </div>
+        </div>
 
-          <div class="partes-do-corpo" onmouseover="javascript:audioSistemaUrinario();" onmouseout="javascript:pararAudio('audioSistemaUrinario');">
-            <input type="button" value="" class="botao__audio"
-            onclick="javascript:audioSistemaUrinario();"/>
+        <div class="partes-do-corpo" onmouseover="javascript:audioSistemaUrinario();"
+          onmouseout="javascript:pararAudio('audioSistemaUrinario');">
+            <input type="button" value="" class="botao__audio" onclick="javascript:audioSistemaUrinario();"/>
             <audio id="audioSistemaUrinario" src="audios/sistema-urinario.mp4" ></audio>
+
             <h1 class="titulo"> Sistema Urinário </h1>
             <h2 class="descricao">
                 Pode ser no meio do filme, no meio da prova, ou na hora mais divertida da brincadeira,
@@ -222,16 +239,17 @@
                 vezes a mensagem que a bexiga que está cheia não chega ao
                 cérebro e sem esse aviso, isso acontece.
             </h2>
-        </div>
+      </div>
+      </section>
 
-        </section>
-        <!-- RODAPE -->
-        <footer class="rodape" id="rodape">
-            <a href="index.html" id="linkVoltar"> VOLTAR </a>
-        </footer>
-        <!-- SCRIPTS -->
-        <script src="scripts/contraste.js"></script>
-        <script src="scripts/audio.js"></script>
+      <!-- RODAPE -->
+      <footer class="rodape" id="rodape">
+          <a href="index.html" id="linkVoltar"> Voltar </a>
+      </footer>
+
+      <!-- SCRIPTS -->
+      <script src="scripts/contraste.js"></script>
+      <script src="scripts/audio.js"></script>
     </section>
 </body>
 </html>

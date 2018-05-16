@@ -3,41 +3,50 @@
     <head>
         <title> Conhecendo o Corpo Humano </title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ARQUIVOS CSS -->
         <link rel="stylesheet" type="text/css" href="estilos/reset.css"/>
-        <link rel="stylesheet" type="text/css" href="estilos/page_template.css"/>
-        <link id="temas" rel="stylesheet" type="text/css" href="estilos/temas/temaBranco.css"/>
+        <link rel="stylesheet" type="text/css" href="estilos/page-template.css"/>
+        <link rel="stylesheet" type="text/css" href="estilos/temas/temaBranco.css" id="temas" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
  <body>
-    <section class="painel" id="painel">
+    <section class="conteiner" id="conteiner">
+      <!-- BOTOES PARA TROCAR O CONTRASTE DA PÁGINA -->
       <section class="menu__contraste">
-          <!-- BOTOES DE TEMA -->
-          <button type="button" onclick="temaAzul()" class="botao__contraste" id="botaoAzul"> AZUL </button>
-          <button type="button" onclick="temaPreto()" class="botao__contraste" id="botaoPreto"> PRETO </button>
-          <button type="button" onclick="temaBranco()" class="botao__contraste" id="botaoBranco"> BRANCO </button>
-          <button type="button" onclick="temaAmarelo()" class="botao__contraste" id="botaoAmarelo"> AMARELO </button>
+          <button type="button" onclick="temaAzul();"    class="botao__contraste" id="botaoAzul">    AZUL    </button>
+          <button type="button" onclick="temaPreto();"   class="botao__contraste" id="botaoPreto">   PRETO   </button>
+          <button type="button" onclick="temaBranco();"  class="botao__contraste" id="botaoBranco">  BRANCO  </button>
+          <button type="button" onclick="temaAmarelo();" class="botao__contraste" id="botaoAmarelo"> AMARELO </button>
       </section>
 
-        <!-- MENU DE NAVEGAÇÃO -->
-        <header class="cabecalho" id="cabecalho">
-            <img src="imagens/icones/CORPO_BRANCO.png" class="icone--pequeno" id="iconeCorpo" alt="conhecendo"/>
-            <h1 id="tituloDoMenu"> Conhecendo o Corpo Humano </h1>
-        </header>
+      <!-- CABEÇALHO DA PÁGINA -->
+      <header class="cabecalho" id="cabecalho">
+          <img src="imagens/icones/CORPO_BRANCO.png" class="icone--pequeno" id="iconeCorpo" alt="conhecendo"/>
+          <h1 id="tituloDoMenu"> Conhecendo o Corpo Humano </h1>
+      </header>
 
-        <!-- BLOCO DE CONTEÚDOS -->
-        <section class="conteudo" id="conteudo">
+      <!-- MENU DE NAVEGAÇÃO - INDICA ONDE O USUÁRIO ESTÁ NA PÁGINA -->
+      <nav id="navegacao">
+          <h1 class="titulo"> Início - Corpo Humano </h1>
+      </nav>
 
-          <!-- CONTEUDO CONHECENDO O CORPO HUMANO VAI AQUI -->
+      <!-- BLOCO DE CONTEÚDOS -->
+      <section class="conteudo" id="conteudo">
 
-        </section>
+        <!-- CONTEUDO CONHECENDO O CORPO HUMANO VAI AQUI -->
 
-        <!-- RODAPE -->
-        <footer class="rodape" id="rodape">
-            <a href="index.html" id="linkVoltar"> VOLTAR </a>
-        </footer>
-        <!-- SCRIPTS -->
+      </section>
+
+      <!-- RODAPE -->
+      <footer class="rodape" id="rodape">
+          <a href="index.html" id="linkVoltar"> Voltar </a>
+      </footer>
     </section>
+
+    <!-- SCRIPTS -->
     <script src="scripts/contraste.js"></script>
     <script src="scripts/audio.js"></script>
 </body>

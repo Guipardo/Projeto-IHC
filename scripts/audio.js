@@ -102,7 +102,7 @@ function pararAudio(id)
 }
 
 
-// ============================================================================ QUIZ
+// =============================================================================  QUIZ
 
 function audiopergunta1()
 {
@@ -183,11 +183,8 @@ function audioestomago()
     audio.play();
 }
 
-
 function audioboca()
 {
     var audio = document.getElementById("boca");
     audio.play();
 }
-
-

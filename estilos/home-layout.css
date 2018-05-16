@@ -1,0 +1,316 @@
+@import "home-grid.css";
+
+/* ============================================================================= CONFIGURAÇÕES GERAIS */
+a { text-decoration: none; }
+body { font-family: Arial, sans-serif; }
+
+figure
+{
+  width: 150px;
+  height: 150px;
+}
+
+img
+{
+  width: 100%;
+  height: 100%;
+}
+
+.icones
+{
+  border-radius: 50%;
+}
+
+.botao__audio
+{
+  border-radius: 50%;
+  background-size: 100%;
+  background-image: url("../imagens/icones/SOM_BRANCO.png");
+  background-repeat: no-repeat;
+}
+
+#logotipo
+{
+  position: relative;
+  bottom: 0;
+  float: right;
+}
+
+.opcao
+{
+  text-align: center;
+}
+
+.menu__contraste
+{
+  width: 100%;
+  float: right;
+}
+
+.botao__contraste
+{
+  border-radius: 2em;
+  margin: 5px;
+}
+
+.botao__audio
+{
+  background-size: 100%;
+}
+
+.introducao
+{
+  text-align: center;
+}
+
+.rodape
+{
+  width: auto;
+  text-align: center;
+}
+
+#navegacao
+{
+  top: 1.5em;
+}
+
+/* ============================================================================= TELA PEQUENA */
+@media only screen and (max-width:519px)
+{
+  .cabecalho
+  {
+    height: 12em;
+  }
+
+  .botao__contraste
+  {
+    min-width: 120px;
+    height: 2.5em;
+  }
+
+  #logotipo
+  {
+    width: 15em;
+    height: 5em;
+    top: 0.5em;
+  }
+
+  #tituloDoMenu
+  {
+    margin: 0.5em;
+    font-size: 1.5em;
+  }
+
+  .icone--pequeno
+  {
+    width: 4em;
+    height: 4em;
+    float:left;
+    margin-right: 1em;
+  }
+
+  .botao__audio
+  {
+    width: 40px;
+    height: 40px;
+  }
+
+  .titulo
+  {
+    font-size: 4em;
+  }
+
+  .subtitulo
+  {
+    font-size: 2em;
+  }
+
+  .cabecalho
+  {
+    clear: left;
+    width: 100%;
+    padding: 1em;
+    height: 10em;
+  }
+
+  #conteudo
+  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+/* ============================================================================= TELA MEDIA */
+@media only screen and (min-width:520px)
+{
+  .botao__contraste
+  {
+    min-width: 80px;
+    height: 4em;
+  }
+
+  #logotipo
+  {
+    width: 18em;
+    height: 7em;
+    top:-1.5em;
+  }
+
+  #tituloDoMenu
+  {
+    margin: 0.5em;
+    font-size: 2em;
+  }
+
+  .botao__audio
+  {
+    width: 40px;
+    height: 40px;
+  }
+
+  .titulo
+  {
+    font-size: 6em;
+  }
+
+  .subtitulo
+  {
+    font-size: 4em;
+  }
+
+  .cabecalho
+  {
+    clear: left;
+    width: 100%;
+    padding: 1em;
+    height: 12em;
+  }
+
+  #conteudo
+  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+/* ============================================================================ TELA GRANDE*/
+@media only screen and (min-width:800px)
+{
+  .botao__contraste
+  {
+    min-width: 80px;
+    height: 4em;
+  }
+
+  #logotipo
+  {
+    width: 30em;
+    height: 9em;
+    top: -2em;
+  }
+
+  #tituloDoMenu
+  {
+    margin: 0.5em;
+    font-size: 3em;
+  }
+
+  .botao__audio
+  {
+    width: 40px;
+    height: 40px;
+  }
+
+  .titulo
+  {
+    font-size: 8em;
+  }
+
+  .subtitulo
+  {
+    font-size: 6em;
+  }
+
+  .cabecalho
+  {
+    clear: left;
+    width: 100%;
+    padding: 1em;
+    height: 15em;
+  }
+
+  #conteudo
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* ============================================================================ TELA MUITO GRANDE*/
+@media only screen and (min-width:1130px)
+{
+  .botao__contraste
+  {
+    min-width: 20px;
+    height: 2em;
+  }
+
+  #logotipo
+  {
+    width: 30em;
+    height: 9em;
+    top:-8em;
+  }
+
+  #tituloDoMenu
+  {
+    margin: 0.5em;
+    font-size: 3em;
+  }
+
+  .botao__audio
+  {
+    width: 40px;
+    height: 40px;
+  }
+
+  .titulo
+  {
+    font-size: 12em;
+  }
+
+  .subtitulo
+  {
+    font-size: 8em;
+  }
+
+  .cabecalho
+  {
+    clear: left;
+    width: 100%;
+    padding: 1em;
+    height: 9em;
+  }
+
+  #conteudo
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

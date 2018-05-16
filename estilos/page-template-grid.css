@@ -1,0 +1,107 @@
+@import "page-template-grid.css";
+
+.menu__contraste
+{
+  grid-area:contraste;
+}
+
+.cabecalho
+{
+  grid-area:cabecalho;
+}
+
+#conteudo
+{
+  grid-area:conteudo;
+}
+
+.rodape
+{
+  grid-area:rodape;
+}
+
+#navegacao
+{
+  grid-area:navegacao;
+}
+
+/* ============================================================================= TELA PEQUENA */
+@media only screen and (max-width:519px)
+{
+  .conteiner
+  {
+      margin: 0 auto;
+      width: 90%;
+      -ms-grid-columns: 90%;
+          grid-template-columns: 90%;
+      -ms-grid-rows: 18em 10em 6em auto 4em;
+          grid-template-rows: 18em 10em 6em auto 4em;
+                      grid-template-areas:
+        " contraste "
+        " cabecalho "
+        " navegacao "
+        " conteudo "
+        " rodape ";
+  }
+}
+
+/* ============================================================================= TELA MEDIA */
+@media only screen and (min-width:520px)
+{
+  .conteiner
+  {
+      margin: 0 auto;
+      width: 90%;
+      -ms-grid-columns: 90%;
+          grid-template-columns: 90%;
+      -ms-grid-rows: 8em 10em 6em auto 4em;
+          grid-template-rows: 8em 10em 6em auto 4em;
+                      grid-template-areas:
+        " contraste "
+        " cabecalho "
+        " navegacao "
+        " conteudo "
+        " rodape ";
+  }
+}
+
+
+/* ============================================================================ TELA GRANDE*/
+@media only screen and (min-width:800px)
+{
+  .conteiner
+  {
+      margin: 0 auto;
+      width:90%;
+      -ms-grid-columns: 90%;
+          grid-template-columns: 90%;
+      -ms-grid-rows: 6em 10em 6em auto 4em;
+          grid-template-rows: 6em 10em 6em auto 4em;
+                      grid-template-areas:
+        " contraste "
+        " cabecalho "
+        " navegacao "
+        " conteudo "
+        " rodape ";
+  }
+}
+
+/* ============================================================================ TELA MUITO GRANDE*/
+@media only screen and (min-width:1130px)
+{
+  .conteiner
+  {
+      margin: 0 auto;
+      width:90%;
+      -ms-grid-columns: 90%;
+          grid-template-columns: 90%;
+      -ms-grid-rows: 4em 9em 6em auto 4em;
+          grid-template-rows: 4em 9em 6em auto 4em;
+                      grid-template-areas:
+        " contraste "
+        " cabecalho "
+        " navegacao "
+        " conteudo "
+        " rodape ";
+  }
+}

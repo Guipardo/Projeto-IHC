@@ -54,7 +54,7 @@ function iconesAmarelo()
   mudaIcone("iconeJogo","JOGO_AMARELO","png");
   mudaIcone("iconeVideo","VIDEO_AMARELO","png");
   mudaIcone("iconeLeitura","LEITURA_AMARELO","png");
-  mudaIcone("iconeLapis","LAPIS_AMARELo","png");
+  mudaIcone("iconeLapis","LAPIS_AMARELO","png");
   mudaSom("botao__audio","SOM_AMARELO","png");
 }
 

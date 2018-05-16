@@ -3,50 +3,60 @@
     <head>
         <title>Vídeos</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ARQUIVOS CSS -->
         <link rel="stylesheet" type="text/css" href="estilos/reset.css"/>
-        <link rel="stylesheet" type="text/css" href="estilos/page_template.css"/>
+        <link rel="stylesheet" type="text/css" href="estilos/page-template.css"/>
         <link id="temas" rel="stylesheet" type="text/css" href="estilos/temas/temaBranco.css"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
  <body>
-   <section class="painel" id="painel">
+   <section class="conteiner" id="conteiner">
+     <!-- BOTOES PARA TROCAR O CONTRASTE DA PÁGINA -->
      <section class="menu__contraste">
-         <!-- BOTOES DE TEMA -->
-         <button type="button" onclick="temaAzul()" class="botao__contraste" id="botaoAzul"> AZUL </button>
-         <button type="button" onclick="temaPreto()" class="botao__contraste" id="botaoPreto"> PRETO </button>
-         <button type="button" onclick="temaBranco()" class="botao__contraste" id="botaoBranco"> BRANCO </button>
-         <button type="button" onclick="temaAmarelo()" class="botao__contraste" id="botaoAmarelo"> AMARELO </button>
+         <button type="button" onclick="temaAzul();"    class="botao__contraste" id="botaoAzul">    AZUL    </button>
+         <button type="button" onclick="temaPreto();"   class="botao__contraste" id="botaoPreto">   PRETO   </button>
+         <button type="button" onclick="temaBranco();"  class="botao__contraste" id="botaoBranco">  BRANCO  </button>
+         <button type="button" onclick="temaAmarelo();" class="botao__contraste" id="botaoAmarelo"> AMARELO </button>
      </section>
 
-        <!-- MENU DE NAVEGAÇÃO -->
-        <header class="cabecalho" id="cabecalho">
-            <img src="imagens/icones/VIDEO_BRANCO.png" class="icone--pequeno" id="iconeVideo" alt="videos"/>
-            <h1 id="tituloDoMenu"> Vídeos </h1>
-        </header>
+    <!-- CABEÇALHO DA PÁGINA -->
+    <header class="cabecalho" id="cabecalho">
+        <img src="imagens/icones/VIDEO_BRANCO.png" class="icone--pequeno" id="iconeVideo" alt="videos"/>
+        <h1 id="tituloDoMenu"> Vídeos </h1>
+    </header>
 
-        <!-- BLOCO DE CONTEÚDOS -->
-        <section class="conteudo" id="conteudo">
-          <h2 class="titulo"> Aprendendo as partes do corpo </h2>
-            <video controls>
-              <source src="videos/video1.mp4" type="video/mp4">
-            </video>
+    <!-- MENU DE NAVEGAÇÃO - INDICA ONDE O USUÁRIO ESTÁ NA PÁGINA -->
+    <nav id="navegacao">
+        <h1 class="titulo"> Início - Vídeos </h1>
+    </nav>
+
+    <!-- BLOCO DE CONTEÚDOS -->
+    <section class="conteudo" id="conteudo">
+        <h2 class="titulo"> Aprendendo as partes do corpo </h2>
+        <video controls>
+            <source src="videos/video1.mp4" type="video/mp4">
+        </video>
 
             <br><br>
             <br><br>
             <br><br>
 
-          <h2 class="titulo"> Para que servem as partes do corpo </h2>
-            <video controls>
-              <source src="videos/video2.mp4" type="video/mp4">
-            </video>
-        </section>
-
-        <!-- RODAPE -->
-        <footer class="rodape" id="rodape">
-            <a href="index.html" id="linkVoltar"> VOLTAR </a>
-        </footer>
+        <h2 class="titulo"> Para que servem as partes do corpo </h2>
+        <video controls>
+            <source src="videos/video2.mp4" type="video/mp4">
+        </video>
     </section>
+
+    <!-- RODAPE -->
+    <footer class="rodape" id="rodape">
+        <a href="index.html" id="linkVoltar"> Voltar </a>
+    </footer>
+
+    </section>
+    
     <!-- SCRIPTS -->
     <script src="scripts/contraste.js"></script>
 </body>

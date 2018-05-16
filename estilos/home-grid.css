@@ -1,0 +1,162 @@
+.conteiner
+{
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 4em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.menu__contraste
+{
+  grid-area:contraste;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 0 0 auto;
+      -ms-flex-positive: 0 0 auto;
+          flex-grow: 0 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.botao__contraste
+{
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-box-flex:1;
+      -ms-flex:1;
+          flex:1;
+}
+
+.cabecalho
+{
+  grid-area:cabecalho;
+}
+
+.rodape
+{
+  grid-area:rodape;
+}
+
+#conteudo
+{
+  grid-area:conteudo;
+}
+
+#navegacao
+{
+  grid-area:navegacao;
+}
+
+/* ============================================================================= TELA PEQUENA */
+@media only screen and (min-width:370px)
+{
+  .conteiner
+  {
+      margin: 0.5em auto;
+      width: 90%;
+      -ms-grid-columns: 90%;
+          grid-template-columns: 90%;
+      -ms-grid-rows: 5em 6em 2em auto 5em;
+          grid-template-rows: 5em 6em 2em auto 5em;
+                      grid-template-areas:
+        " contraste "
+        " cabecalho "
+        " navegacao "
+        " conteudo "
+        " rodape ";
+  }
+
+  #conteudo section
+  {
+      margin-bottom: 10em;
+  }
+}
+
+/* ============================================================================= TELA MEDIA */
+@media only screen and (min-width:520px)
+{
+  .conteiner
+  {
+      margin: 0.5em auto;
+      width: 90%;
+      -ms-grid-columns: 90%;
+          grid-template-columns: 90%;
+      -ms-grid-rows: 2em 10em 2em auto 3em;
+          grid-template-rows: 2em 10em 2em auto 3em;
+                      grid-template-areas:
+        " contraste "
+        " cabecalho "
+        " navegacao "
+        " conteudo "
+        " rodape ";
+  }
+
+  #conteudo section
+  {
+      margin-bottom: 10em;
+  }
+}
+
+/* ============================================================================ TELA GRANDE*/
+@media only screen and (min-width:800px)
+{
+  .conteiner
+  {
+      margin: 0.5em auto;
+      width: 90%;
+      -ms-grid-columns: 90%;
+          grid-template-columns: 90%;
+      -ms-grid-rows: 2em 12em 2em auto 3em;
+          grid-template-rows: 2em 12em 2em auto 3em;
+                      grid-template-areas:
+        " contraste "
+        " cabecalho "
+        " navegacao "
+        " conteudo "
+        " rodape ";
+  }
+
+  #conteudo section
+  {
+      margin-bottom: 10em;
+  }
+}
+
+/* ============================================================================ TELA MUITO GRANDE*/
+@media only screen and (min-width:1130px)
+{
+  .conteiner
+  {
+      margin: 0.5em auto;
+      width: 90%;
+      -ms-grid-columns: 90%;
+          grid-template-columns: 90%;
+      -ms-grid-rows: 0em 4em 0em auto 2em;
+          grid-template-rows: 0em 4em 0em auto 2em;
+                      grid-template-areas:
+        " contraste "
+        " cabecalho "
+        " navegacao "
+        " conteudo "
+        " rodape ";
+  }
+
+  #conteudo section
+  {
+      margin-bottom: 2em;
+  }
+}

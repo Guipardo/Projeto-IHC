@@ -3,193 +3,204 @@
     <head>
         <title>Teste seu conhecimento</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ARQUIVOS CSS -->
         <link rel="stylesheet" href="estilos/quiz.css">
         <link rel="stylesheet" type="text/css" href="estilos/reset.css"/>
-        <link rel="stylesheet" type="text/css" href="estilos/page_template.css"/>
+        <link rel="stylesheet" type="text/css" href="estilos/page-template.css"/>
         <link id="temas" rel="stylesheet" type="text/css" href="estilos/temas/temaBranco.css"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
  <body>
-   <section class="painel" id="painel">
+   <section class="conteiner" id="conteiner">
+     <!-- BOTOES PARA TROCAR O CONTRASTE DA PÁGINA -->
      <section class="menu__contraste">
-         <!-- BOTOES DE TEMA -->
-         <button type="button" onclick="temaAzul()" class="botao__contraste" id="botaoAzul"> AZUL </button>
-         <button type="button" onclick="temaPreto()" class="botao__contraste" id="botaoPreto"> PRETO </button>
-         <button type="button" onclick="temaBranco()" class="botao__contraste" id="botaoBranco"> BRANCO </button>
-         <button type="button" onclick="temaAmarelo()" class="botao__contraste" id="botaoAmarelo"> AMARELO </button>
-       </section>
+         <button type="button" onclick="temaAzul();"    class="botao__contraste" id="botaoAzul">    AZUL    </button>
+         <button type="button" onclick="temaPreto();"   class="botao__contraste" id="botaoPreto">   PRETO   </button>
+         <button type="button" onclick="temaBranco();"  class="botao__contraste" id="botaoBranco">  BRANCO  </button>
+         <button type="button" onclick="temaAmarelo();" class="botao__contraste" id="botaoAmarelo"> AMARELO </button>
+     </section>
 
-        <!-- MENU DE NAVEGAÇÃO -->
-        <header class="cabecalho" id="cabecalho">
-            <img src="imagens/icones/LAMPADA_BRANCO.png" class="icone--pequeno" id="iconeLampada" alt="testes"/>
-            <h1 id="tituloDoMenu"> Teste seus conhecimentos </h1>
-        </header>
+    <!-- CABEÇALHO DA PÁGINA -->
+    <header class="cabecalho" id="cabecalho">
+        <img src="imagens/icones/LAMPADA_BRANCO.png" class="icone--pequeno" id="iconeLampada" alt="testes"/>
+        <h1 id="tituloDoMenu"> Teste seus conhecimentos </h1>
+    </header>
 
-        <!-- BLOCO DE CONTEÚDOS -->
-        <section class="conteudo" id="conteudo">
-            
-            <section id="caminho">
-                <h1 class="titulo"> Voce está na página inicial -> Teste seus conhecimentos </h1>   
-            </section>
+    <!-- MENU DE NAVEGAÇÃO - INDICA ONDE O USUÁRIO ESTÁ NA PÁGINA -->
+    <nav id="navegacao">
+        <h1 class="titulo"> Início - Testes </h1>
+    </nav>
 
-            <!-- CONTEÚDOS DE TESTES ENTRA AQUI -->
+    <!-- BLOCO DE CONTEÚDOS -->
+    <section class="conteudo" id="conteudo">
 
-	<table style="width:850px">
-	<tr>
-	  <td>
-	  	<div>
-	  		<p class="question">1. Qual a parte do corpo que as pessoas usam para respirar ?
-                <img src = "imagens/icones/SOM_BRANCO.png"alt="pergunta número um" value="" id="perguntaum" class="botao__audio_question" onclick="javascript:audiopergunta1()" onmouseover="javascript:audiopergunta1()"/>
-                <audio id="perg1" src="audios/quiz/Pergunta1.m4a"></audio>
+    <h2 class="titulo quizHeader"> Responda as perguntas </h2>
+    <br>
+	  <table style="width:850px">
+	     <tr>
+	        <td>
+	  	        <div>
+	  		           <p class="question">
+                     1. Qual a parte do corpo que as pessoas usam para respirar ?
+                     <input type="button" value="" class="botao__audio_question" onclick="javascript:audiopergunta1()" onmouseover="javascript:audiopergunta1()"/>
+                     <audio id="perg1" src="audios/quiz/Pergunta1.m4a" ></audio>
+                   </p>
 
-            </p>
-	    	<ul>
-	    	<input class="answer" type="radio" alt="alternativa um" name="q1" value="1">
-	        <label id="correctString1">Nariz</label>
-                <img src = "imagens/icones/SOM_BRANCO.png"alt="alternativa um" value="" class="botao__audio_question" onclick="javascript:audionariz()" onmouseover="javascript:audionariz()"/>
-                <audio id="nariz" src="audios/quiz/Nariz.m4a" ></audio>
-	    	<br>
-	        <input class="answer" type="radio" name="q1" value="0">
-	        <label>Braço</label>
-                <img src = "imagens/icones/SOM_BRANCO.png"alt="alternativa dois" value="" class="botao__audio_question" onclick="javascript:audiobraco()" onmouseover="javascript:audiobraco()"/>
-                <audio id="braco" src="audios/quiz/Braco.m4a" ></audio>
-	        <br>
-	        <input class="answer" type="radio" name="q1" value="0">
-	        <label>Perna</label>
-                <img src = "imagens/icones/SOM_BRANCO.png"alt="alternativa três" value="" class="botao__audio_question" onclick="javascript:audioperna2()" onmouseover="javascript:audioperna2()"/>
-                <audio id="perna" src="audios/quiz/Perna.m4a" ></audio>
-	        <br>
-	        <input class="answer" type="radio" name="q1" value="0">
-	        <label>Mão</label>
-                <img src = "imagens/icones/SOM_BRANCO.png"alt="alternativa quatro" value="" class="botao__audio_question" onclick="javascript:audiomao()" onmouseover="javascript:audiomao()"/>
-                <audio id="mao" src="audios/quiz/Mao.m4a" ></audio>
-    		</ul>
-	  	</div>
-	  </td>
-	  <td>
-	  	<div>
-	  		<p class="question">2. Qual parte do corpo usamos para pegar objetos?
-            <img src = "imagens/icones/SOM_BRANCO.png"alt="pergunta número dois"value="" class="botao__audio_question" onclick="javascript:audiopergunta2()" onmouseover="javascript:audiopergunta2()"/>
-                <audio id="perg2" src="audios/quiz/Pergunta2.m4a" ></audio>
-            </p>
+                   <ul>
+	    	               <input class="answer" type="radio" name="q1" value="1">
+                       <label id="correctString1">Nariz</label>
+                       <input type="button" value="" class="botao__audio_question" onclick="javascript:audionariz()" onmouseover="javascript:audionariz()"/>
+                       <audio id="nariz" src="audios/quiz/Nariz.m4a" ></audio>
+	    	               <br>
+	                     <input class="answer" type="radio" name="q1" value="0">
+	                     <label>Braço</label>
+                       <input type="button" value="" class="botao__audio_question" onclick="javascript:audiobraco()" onmouseover="javascript:audiobraco()"/>
+                       <audio id="braco" src="audios/quiz/Braco.m4a" ></audio>
+	                     <br>
+	                     <input class="answer" type="radio" name="q1" value="0">
+	                     <label>Perna</label>
+                       <input type="button" value="" class="botao__audio_question" onclick="javascript:audioperna2()" onmouseover="javascript:audioperna2()"/>
+                       <audio id="perna" src="audios/quiz/Perna.m4a" ></audio>
+	                     <br>
+	                     <input class="answer" type="radio" name="q1" value="0">
+	                     <label>Mão</label>
+                      <input type="button" value="" class="botao__audio_question" onclick="javascript:audiomao()" onmouseover="javascript:audiomao()"/>
+                      <audio id="mao" src="audios/quiz/Mao.m4a" ></audio>
+    		           </ul>
+	  	        </div>
+	       </td>
 
-	    	<ul>
-	        <input class="answer" type="radio" name="q2" value="0">
-	        <label>Perna</label>
-                <img src = "imagens/icones/SOM_BRANCO.png"alt="alternativa um" value="" class="botao__audio_question" onclick="javascript:audioperna2()" onmouseover="javascript:audioperna2()"/>
-                <audio id="perna" src="audios/quiz/Perna.m4a" ></audio>
-	        <br>
-	        <input class="answer" type="radio" name="q2" value="1">
-	        <label id="correctString2">Mão</label>
-                <img src = "imagens/icones/SOM_BRANCO.png"alt="alternativa dois" value="" class="botao__audio_question" onclick="javascript:audiomao()" onmouseover="javascript:audiomao()"/>
-                <audio id="mao" src="audios/quiz/Mao.m4a" ></audio>
-	        <br>
-	        <input class="answer" type="radio" name="q2" value="0">
-	        <label>Cabeça</label>
-                <img src = "imagens/icones/SOM_BRANCO.png"alt="alternativa três" value="" class="botao__audio_question" onclick="javascript:audiocabeca()" onmouseover="javascript:audiocabeca()"/>
-                <audio id="cabeca" src="audios/quiz/Cabecca.m4a" ></audio>
-	        <br>
-	        <input class="answer" type="radio" name="q2" value="0">
-	        <label>Nariz</label>
-                <img src = "imagens/icones/SOM_BRANCO.png"alt="alternativo quatro" value="" class="botao__audio_question" onclick="javascript:audionariz()" onmouseover="javascript:audionariz()"/>
-                <audio id="nariz" src="audios/quiz/Nariz.m4a" ></audio>
-	    	</ul>
-	  	</div>
-	  </td>
-	</tr>
-	<tr>
-	  <td>
-	  	<div>
-	  		<p class="question">3. Qual orgão do corpo humano é responsavel por bombear o sangue?
-            <img src = "imagens/icones/SOM_BRANCO.png"alt="pergunta número três" value="" class="botao__audio_question" onclick="javascript:audiopergunta3()" onmouseover="javascript:audiopergunta3()"/>
-                <audio id="perg3" src="audios/quiz/Pergunta3.m4a" ></audio>
-            </p>
+         <td>
+	  	       <div>
+	  		          <p class="question">
+                    2. Qual parte do corpo usamos para pegar objetos?
+                    <input type="button" value="" class="botao__audio_question" onclick="javascript:audiopergunta2()" onmouseover="javascript:audiopergunta2()"/>
+                    <audio id="perg2" src="audios/quiz/Pergunta2.m4a" ></audio>
+                  </p>
 
-	    	<ul>
-	        <input class="answer" type="radio" name="q3" value="0">
-	        <label>Cérebro</label>
-                <img src = "imagens/icones/SOM_BRANCO.png"alt="alternativa um" value="" class="botao__audio_question" onclick="javascript:audiocerebro2()" onmouseover="javascript:audiocerebro2()"/>
-                <audio id="cerebro" src="audios/quiz/Cerebro.m4a" ></audio>
-	        <br>
-	        <input class="answer" type="radio" name="q3" value="1">
-	        <label id="correctString3">Coração</label>
-                <img src = "imagens/icones/SOM_BRANCO.png"alt="alternativa dois" value="" class="botao__audio_question" onclick="javascript:audiocoracao2()" onmouseover="javascript:audiocoracao2()"/>
-                <audio id="coracao" src="audios/quiz/Coracao.m4a" ></audio>
-	        <br>
-	        <input class="answer" type="radio" name="q3" value="0">
-	        <label>Intestino</label>
-                <img src = "imagens/icones/SOM_BRANCO.png"alt="alternativa três" value="" class="botao__audio_question" onclick="javascript:audiointestino()" onmouseover="javascript:audiointestino()"/>
-                <audio id="intestino" src="audios/quiz/Intestino.m4a" ></audio>
-	        <br>
-	        <input class="answer" type="radio" name="q3" value="0">
-	        <label>Estomago</label>
-                <img src = "imagens/icones/SOM_BRANCO.png"alt="alternativa quatro"value="" class="botao__audio_question" onclick="javascript:audioestomago()" onmouseover="javascript:audioestomago()"/>
-                <audio id="estomago" src="audios/quiz/Estomago.m4a" ></audio>
-	    	</ul>
-		</div>
-	  </td>
-	  <td>
-	  	<div>
-	  		<p class="question">4. Que parte do corpo humano nós usamos para andar?
-            <img src = "imagens/icones/SOM_BRANCO.png"alt="pergunta número quatro" value="" class="botao__audio_question" onclick="javascript:audiopergunta4()" onmouseover="javascript:audiopergunta4()"/>
-                <audio id="perg4" src="audios/quiz/Pergunta4.m4a" ></audio>
-            </p>
+	    	          <ul>
+	                  <input class="answer" type="radio" name="q2" value="0">
+	                  <label>Perna</label>
+                    <input type="button" value="" class="botao__audio_question" onclick="javascript:audioperna2()" onmouseover="javascript:audioperna2()"/>
+                    <audio id="perna" src="audios/quiz/Perna.m4a" ></audio>
+	                  <br>
+	                  <input class="answer" type="radio" name="q2" value="1">
+	                  <label id="correctString2">Mão</label>
+                    <input type="button" value="" class="botao__audio_question" onclick="javascript:audiomao()" onmouseover="javascript:audiomao()"/>
+                    <audio id="mao" src="audios/quiz/Mao.m4a" ></audio>
+	                  <br>
+	                  <input class="answer" type="radio" name="q2" value="0">
+	                  <label>Cabeça</label>
+                    <input type="button" value="" class="botao__audio_question" onclick="javascript:audiocabeca()" onmouseover="javascript:audiocabeca()"/>
+                    <audio id="cabeca" src="audios/quiz/Cabecca.m4a" ></audio>
+	                  <br>
+	                  <input class="answer" type="radio" name="q2" value="0">
+	                  <label>Nariz</label>
+                    <input type="button" value="" class="botao__audio_question" onclick="javascript:audionariz()" onmouseover="javascript:audionariz()"/>
+                    <audio id="nariz" src="audios/quiz/Nariz.m4a" ></audio>
+	    	          </ul>
+	  	        </div>
+	        </td>
+	     </tr>
 
-	    	<ul>
-	        <input class="answer" type="radio" name="q4" value="0">
-	        <label>Cabeça</label>
-                <img src = "imagens/icones/SOM_BRANCO.png"alt="alternativa um" value="" class="botao__audio_question" onclick="javascript:audiocabeca()" onmouseover="javascript:audiocabeca()"/>
-                <audio id="cabeca" src="audios/quiz/Cabecca.m4a" ></audio>
-	        <br>
-	        <input class="answer" type="radio" name="q4" value="1">
-	        <label id="correctString4">Perna</label>
-                <img src = "imagens/icones/SOM_BRANCO.png"alt="alternativa dois" value="" class="botao__audio_question" onclick="javascript:audioperna2()" onmouseover="javascript:audioperna2()"/>
-                <audio id="perna" src="audios/quiz/Perna.m4a" ></audio>
-	        <br>
-	        <input class="answer" type="radio" name="q4" value="0">
-	        <label>Nariz</label>
-                <img src = "imagens/icones/SOM_BRANCO.png"alt="alternativa três" value="" class="botao__audio_question" onclick="javascript:audionariz()" onmouseover="javascript:audionariz()"/>
-                <audio id="nariz" src="audios/quiz/Nariz.m4a" ></audio>
-	        <br>
-	        <input class="answer" type="radio" name="q4" value="0">
-	        <label>Boca</label>
-                <img src = "imagens/icones/SOM_BRANCO.png"alt="alternativa quatro" value="" class="botao__audio_question" onclick="javascript:audioboca()" onmouseover="javascript:audioboca()"/>
-                <audio id="boca" src="audios/quiz/Boca.m4a" ></audio>
-    		</ul>
-	  	</div>
-	  </td>
-	</tr>
+       <tr>
+	        <td>
+	  	        <div>
+	  		           <p class="question">
+                     3. Qual orgão do corpo humano é responsavel por bombear o sangue?
+                   <input type="button" value="" class="botao__audio_question" onclick="javascript:audiopergunta3()" onmouseover="javascript:audiopergunta3()"/>
+                   <audio id="perg3" src="audios/quiz/Pergunta3.m4a" ></audio>
+                   </p>
+
+	    	           <ul>
+	                     <input class="answer" type="radio" name="q3" value="0">
+	                     <label>Cérebro</label>
+                       <input type="button" value="" class="botao__audio_question" onclick="javascript:audiocerebro2()" onmouseover="javascript:audiocerebro2()"/>
+                       <audio id="cerebro" src="audios/quiz/Cerebro.m4a" ></audio>
+	                     <br>
+	                     <input class="answer" type="radio" name="q3" value="1">
+	                     <label id="correctString3">Coração</label>
+                       <input type="button" value="" class="botao__audio_question" onclick="javascript:audiocoracao2()" onmouseover="javascript:audiocoracao2()"/>
+                       <audio id="coracao" src="audios/quiz/Coracao.m4a" ></audio>
+	                     <br>
+	                     <input class="answer" type="radio" name="q3" value="0">
+	                     <label>Intestino</label>
+                       <input type="button" value="" class="botao__audio_question" onclick="javascript:audiointestino()" onmouseover="javascript:audiointestino()"/>
+                       <audio id="intestino" src="audios/quiz/Intestino.m4a" ></audio>
+	                     <br>
+	                     <input class="answer" type="radio" name="q3" value="0">
+	                     <label>Estomago</label><input type="button" value="" class="botao__audio_question" onclick="javascript:audioestomago()" onmouseover="javascript:audioestomago()"/>
+                       <audio id="estomago" src="audios/quiz/Estomago.m4a" ></audio>
+	    	             </ul>
+		            </div>
+	         </td>
+
+           <td>
+             <div>
+	  		          <p class="question">
+                    4. Que parte do corpo humano nós usamos para andar?
+                  <input type="button" value="" class="botao__audio_question" onclick="javascript:audiopergunta4()" onmouseover="javascript:audiopergunta4()"/>
+                  <audio id="perg4" src="audios/quiz/Pergunta4.m4a" ></audio>
+                  </p>
+
+	    	       <ul>
+	                <input class="answer" type="radio" name="q4" value="0">
+	                <label>Cabeça</label>
+                  <input type="button" value="" class="botao__audio_question" onclick="javascript:audiocabeca()" onmouseover="javascript:audiocabeca()"/>
+                  <audio id="cabeca" src="audios/quiz/Cabecca.m4a" ></audio>
+	                <br>
+	                <input class="answer" type="radio" name="q4" value="1">
+	                <label id="correctString4">Perna</label>
+                  <input type="button" value="" class="botao__audio_question" onclick="javascript:audioperna2()" onmouseover="javascript:audioperna2()"/>
+                  <audio id="perna" src="audios/quiz/Perna.m4a" ></audio>
+	                <br>
+	                <input class="answer" type="radio" name="q4" value="0">
+	                <label>Nariz</label>
+                  <input type="button" value="" class="botao__audio_question" onclick="javascript:audionariz()" onmouseover="javascript:audionariz()"/>
+                  <audio id="nariz" src="audios/quiz/Nariz.m4a" ></audio>
+	                <br>
+	                <input class="answer" type="radio" name="q4" value="0">
+	                <label>Boca</label>
+                  <input type="button" value="" class="botao__audio_question" onclick="javascript:audioboca()" onmouseover="javascript:audioboca()"/>
+                  <audio id="boca" src="audios/quiz/Boca.m4a" ></audio>
+    		       </ul>
+	  	     </div>
+	     </td>
+	 </tr>
 	</table>
-<br/>
+
+  <br/>
   <div class="submitter">
-          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
-          type="submit" value="Enviar" />
-    </div>
+      <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+      type="submit" value="Enviar" />
+  </div>
 
-<!--show only wrong answers on submit-->
-    <div class="quizAnswers" id="correctAnswer1"></div>
-    <div class="quizAnswers" id="correctAnswer2"></div>
-    <div class="quizAnswers" id="correctAnswer3"></div>
-    <div class="quizAnswers" id="correctAnswer4"></div>
+  <!--show only wrong answers on submit-->
+  <div class="quizAnswers" id="correctAnswer1"></div>
+  <div class="quizAnswers" id="correctAnswer2"></div>
+  <div class="quizAnswers" id="correctAnswer3"></div>
+  <div class="quizAnswers" id="correctAnswer4"></div>
 
-<!--show score upon submit-->
-    <div>
-    	<h2 class="quizScore" id="userScore"></h2>
-    </div>
+  <!--show score upon submit-->
+  <div>
+    <h2 class="quizScore" id="userScore"></h2>
+  </div>
 
-             <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-             <script  src="scripts/quiz.js"></script>
+  </section>
 
-    </section>
+    <!-- RODAPE -->
+  <footer class="rodape" id="rodape">
+      <a href="index.html" id="linkVoltar"> VOLTAR </a>
+  </footer>
 
-        <!-- RODAPE -->
-        <footer class="rodape" id="rodape">
-            <a href="index.html" id="linkVoltar"> VOLTAR </a>
-        </footer>
-        <!-- SCRIPTS -->
-        <script src="scripts/contraste.js"></script>
-       <script src="scripts/audio.js"></script>
-    </section>
+  </section>
+  <!-- SCRIPTS -->
+  <script src="scripts/contraste.js"></script>
+  <script src="scripts/audio.js"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script  src="scripts/quiz.js"></script>
 </body>
 </html>

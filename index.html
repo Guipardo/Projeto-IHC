@@ -1,51 +1,65 @@
 <!DOCTYPE html>
 <!--
-    COLOCAR AUDIO
+    COLOCAR AUDIO DOS MENUS
 -->
 
 <html lang="pt-br">
-<head>
-    <title> O Corpo Humano </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Aprendendo o Corpo Humano"/>
-    <meta name="description" content="Site com o intuito de ensinar crianças de
-    todos os tipos sobre o corpo humano e como ele funciona"/>
-    <meta name="keywords" content="Corpo Humano,Corpo,Humano,Educação,Acessibilidade"/>
-    <meta property="og:type" content="Corpo Humano" />
-    <meta property="og:title" content="Aprendendo sobre o corpo humano" />
-    <meta property="og:description" content="Site com o intuito de ensinar crianças de
-    todos os tipos sobre o corpo humano e como ele funciona" />
-    <meta property="og:image" content="imagens/logotipo.png" />
-    <link rel="stylesheet" type="text/css" href="estilos/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="estilos/layout.css"/>
-    <link id="temas" rel="stylesheet" type="text/css" href="estilos/temas/temaBranco.css"/>
-</head>
+    <head>
+      <title> O Corpo Humano </title>
+      <meta charset="utf-8">
+
+      <!-- CONFIGURAÇÕES DE PESQUISA -->
+      <meta name="title" content="Aprendendo o Corpo Humano"/>
+      <meta name="description" content="Site com o intuito de ensinar crianças de
+      todos os tipos sobre o corpo humano e como ele funciona"/>
+      <meta name="keywords" content="Corpo Humano,Corpo,Humano,Educação,Acessibilidade"/>
+
+      <!-- CONFIGURAÇÕES DA BIBLIOTECA OG - FACEBOOK-->
+      <meta property="og:type" content="Corpo Humano" />
+      <meta property="og:title" content="Aprendendo sobre o corpo humano" />
+      <meta property="og:description" content="Site com o intuito de ensinar crianças de
+      todos os tipos sobre o corpo humano e como ele funciona" />
+      <meta property="og:image" content="imagens/logotipo.png" />
+
+      <!-- ARQUIVOS CSS -->
+      <link rel="stylesheet" type="text/css" href="estilos/reset.css"/>
+      <link rel="stylesheet" type="text/css" href="estilos/home-layout.css"/>
+      <link rel="stylesheet" type="text/css" href="estilos/temas/temaBranco.css" id="temas" />
+
+      <!-- VIEWPORT -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 
 <body>
-    <section class="painel" id="painel">
+
+    <section class="conteiner" id="conteiner">
+
+        <!-- BOTOES PARA TROCAR O CONTRASTE DA PÁGINA -->
         <section class="menu__contraste">
-            <!-- BOTOES DE TEMA -->
-            <button type="button" onclick="temaAzul()" class="botao__contraste" id="botaoAzul"> AZUL </button>
-            <button type="button" onclick="temaPreto()" class="botao__contraste" id="botaoPreto"> PRETO </button>
-            <button type="button" onclick="temaBranco()" class="botao__contraste" id="botaoBranco"> BRANCO </button>
-            <button type="button" onclick="temaAmarelo()" class="botao__contraste" id="botaoAmarelo"> AMARELO </button>
+            <button type="button" onclick="temaAzul();"    class="botao__contraste" id="botaoAzul">    AZUL    </button>
+            <button type="button" onclick="temaPreto();"   class="botao__contraste" id="botaoPreto">   PRETO   </button>
+            <button type="button" onclick="temaBranco();"  class="botao__contraste" id="botaoBranco">  BRANCO  </button>
+            <button type="button" onclick="temaAmarelo();" class="botao__contraste" id="botaoAmarelo"> AMARELO </button>
         </section>
 
-        <!-- MENU DE NAVEGAÇÃO -->
+        <!-- CABEÇALHO DA PÁGINA -->
         <header class="cabecalho" id="cabecalho">
             <h1 id="tituloDoMenu"> O CORPO HUMANO </h1>
             <figure id="logotipo">
-              <img src="imagens/logotipo.png" alt="criancas"/>
+                <img src="imagens/logotipo.png" alt="logotipo"/>
             </figure>
         </header>
 
-        <section id="caminho">
-            <h1 class="titulo"> Voce está na página inicial </h1>
-        </section>
+        <!-- MENU DE NAVEGAÇÃO - INDICA ONDE O USUÁRIO ESTÁ NA PÁGINA -->
+        <nav id="navegacao">
+            <h1 class="titulo"> Início -  </h1>
+        </nav>
 
         <!-- BLOCO DE CONTEÚDOS -->
-        <section id="leitura" class="opcao">
+
+        <section id="conteudo">
+          <!-- LEITURA -->
+          <section id="leitura" class="opcao">
             <input type="button" value="" class="botao__audio" onclick="javascript:audioLeitura()" onmouseover="javascript:audioLeitura()"/>
             <audio id="audioLeitura" src="audios/" ></audio>
             <a href="leitura.html">
@@ -54,34 +68,34 @@
                 <figcaption> <h1 class="titulo"> Sobre o Corpo Humano </h1> </figcaption>
               </figure>
             </a>
-        </section>
+          </section>
 
+          <!-- CONHECENDO O CORPO HUMANO -->
+          <section id="corpoHumano" class="opcao">
+            <input type="button" value="" class="botao__audio" onclick="javascript:audioCorpo()" onmouseover="javascript:audioCorpo()"/>
+            <a href="conhecendo.html">
+              <audio id="audioCorpo" src="audios/" ></audio>
+              <figure>
+                <img class="icones" id="iconeCorpo" alt="iconeCorpo" src="imagens/icones/CORPO_BRANCO.png"/>
+                <figcaption> <h1 class="titulo"> Conhecendo o corpo humano </h1> </figcaption>
+              </figure>
+            </a>
+          </section>
 
-        <section id="corpoHumano" class="opcao">
-          <input type="button" value="" class="botao__audio" onclick="javascript:audioCorpo()" onmouseover="javascript:audioCorpo()"/>
-          <a href="conhecendo.html">
-            <audio id="audioCorpo" src="audios/" ></audio>
-            <figure>
-              <img class="icones" id="iconeCorpo" alt="iconeCorpo" src="imagens/icones/CORPO_BRANCO.png"/>
-              <figcaption> <h1 class="titulo"> Conhecendo o corpo humano </h1> </figcaption>
-            </figure>
-          </a>
-        </section>
+          <!-- VIDEOS -->
+          <section id="videos" class="opcao">
+            <input type="button" value="" class="botao__audio" onclick="javascript:audioVideo()" onmouseover="javascript:audioVideo()"/>
+            <audio id="audioVideo" src="audios/" ></audio>
+            <a href="videos.html">
+              <figure>
+                <img class="icones" id="iconeVideo" alt="iconeVideo" src="imagens/icones/VIDEO_BRANCO.png"/>
+                <figcaption> <h1 class="titulo"> Vídeos </h1> </figcaption>
+              </figure>
+            </a>
+          </section>
 
-
-        <section id="videos" class="opcao">
-          <input type="button" value="" class="botao__audio" onclick="javascript:audioVideo()" onmouseover="javascript:audioVideo()"/>
-          <audio id="audioVideo" src="audios/" ></audio>
-          <a href="videos.html">
-            <figure>
-              <img class="icones" id="iconeVideo" alt="iconeVideo" src="imagens/icones/VIDEO_BRANCO.png"/>
-              <figcaption> <h1 class="titulo"> Vídeos </h1> </figcaption>
-            </figure>
-          </a>
-        </section>
-
-
-        <section id="jogos" class="opcao">
+          <!-- JOGOS -->
+          <section id="jogos" class="opcao">
             <input type="button" value="" class="botao__audio" onclick="javascript:audioJogo()" onmouseover="javascript:audioJogo()"/>
             <audio id="audioJogo" src="audios/" ></audio>
             <a href="jogos.html">
@@ -90,10 +104,10 @@
                 <figcaption> <h1 class="titulo"> Jogos </h1> </figcaption>
               </figure>
             </a>
-        </section>
+          </section>
 
-
-        <section id="desenho" class="opcao">
+          <!-- DESENHO -->
+          <section id="desenho" class="opcao">
             <input type="button" value="" class="botao__audio" onclick="javascript:audioDesenho()" onmouseover="javascript:audioDesenho()"/>
             <audio id="audioDesenho" src="audios/" ></audio>
             <a href="desenho.html">
@@ -102,9 +116,10 @@
                 <figcaption> <h1 class="titulo"> Ferramenta de Desenho </h1> </figcaption>
               </figure>
             </a>
-        </section>
+          </section>
 
-        <section id="testes" class="opcao">
+          <!-- TESTES -->
+          <section id="testes" class="opcao">
             <input type="button" value="" class="botao__audio" onclick="javascript:audioLampada()" onmouseover="javascript:audioLampada()"/>
             <audio id="audioLampada" src="audios/"  ></audio>
             <a href="teste.html">
@@ -113,14 +128,19 @@
                 <figcaption>  <h1 class="titulo"> Teste seus conhecimentos </h1> </figcaption>
               </figure>
             </a>
+          </section>
+
         </section>
+
 
         <!-- RODAPÉ -->
         <footer class="rodape" id="rodape">
             @Faculdade de Computação e Informática - Universidade Presbiteriana Mackenzie
-        </footer>
+        </footer> <!-- FIM DO RODAPÉ -->
 
-    </section>
+    </section> <!-- FIM DO PAINEL !-->
+
+    <!-- SCRIPTS -->
     <script src="scripts/contraste.js"></script>
     <script src="scripts/audio.js"></script>
 </body>

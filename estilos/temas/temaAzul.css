@@ -1,7 +1,31 @@
-/* =============================================================== GERAL */
-body
+/* =============================================================== TEXTOS */
+.titulo
 {
-  background-color: blue;
+  font-size: 1.5em;
+  font-weight: bold;
+  color:yellow;
+}
+
+.subtitulo
+{
+  font-size: 1em;
+  color:yellow;
+}
+
+.descricao
+{
+  color:yellow;
+}
+
+#linkVoltar
+{
+  color:blue;
+}
+
+/* =============================================================== BOTOES */
+.botao__contraste
+{
+  border: solid 1px black;
 }
 
 #botaoBranco
@@ -28,9 +52,16 @@ body
     color:black;
 }
 
-.botao__contraste
+
+/* =============================================================== BLOCOS */
+body
 {
-  border: solid 1px black;
+  background-color: blue;
+}
+
+.painel
+{
+  background-color: inherit;
 }
 
 .cabecalho
@@ -41,37 +72,8 @@ body
           box-shadow: -10px -10px white;
 }
 
-.painel
-{
-  background-color: inherit;
-}
-
 .rodape
 {
   background-color: yellow;
-  color:blue;
-}
-
-.titulo
-{
-  font-size: 1.5em;
-  font-weight: bold;
-  color:yellow;
-}
-
-.subtitulo
-{
-  font-size: 1em;
-  color:yellow;
-}
-
-
-.descricao
-{
-  color:yellow;
-}
-
-#linkVoltar
-{
   color:blue;
 }
