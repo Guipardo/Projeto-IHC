@@ -3,10 +3,18 @@
 /* ============================================================================= CONFIGURAÇÕES GERAIS */
 body { font-family: Arial, sans-serif; }
 
+.imagemCorpo
+{
+  width:500px;
+  height: 400px;
+  float:left;
+  margin-right: 1em;
+}
 .conteudo video
 {
     width: 100%;
     height: auto;
+    border: solid 1px black;
 }
 
 .icones
@@ -14,7 +22,7 @@ body { font-family: Arial, sans-serif; }
     border-radius: 50%;
 }
 
-#bloco-partes-corpo
+.bloco-partes-corpo
 {
   height: auto;
   min-height: 600px;
@@ -23,7 +31,8 @@ body { font-family: Arial, sans-serif; }
 
 #conteudo
 {
-  height: 60em;
+  height: auto;
+  min-height: 20em;
 }
 
 .icone--pequeno
@@ -40,8 +49,11 @@ body { font-family: Arial, sans-serif; }
   background-size: 100%;
   background-image: url("../imagens/icones/SOM_BRANCO.png");
   background-repeat: no-repeat;
-  width: 14em;
-  height: 14em;
+  width: 10em;
+  height: 10em;
+  float:left;
+  margin-right:2em;
+  margin-bottom: 2em;
 }
 
 .descricao

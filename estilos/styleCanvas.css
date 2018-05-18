@@ -1,3 +1,8 @@
+#conteudoCanvas
+{
+    height: 30em;
+}
+
 canvas {
   background-color: #FFF;
   border: 3px solid #584B53;
@@ -5,7 +10,7 @@ canvas {
   position: absolute;
   top: 50px;
   left: 220px;
-  height: 600px;
+  height: 385px;
 }
 
 .controls {
