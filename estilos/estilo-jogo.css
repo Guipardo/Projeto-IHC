@@ -1,6 +1,6 @@
 /* ============================================================================= TEXTOS */
 #titulo{
-	font-family: Century Gothic;
+	font-family: 'Century Gothic';
 	background: #5769B8;
 	text-align: center;
 	font-weight: bold;
@@ -10,7 +10,7 @@
 }
 
 h2{
-	font-family: Century Gothic;
+	font-family: 'Century Gothic';
 	background: #5769B8;
 	text-align: center;
 	padding: 15px;
@@ -19,7 +19,7 @@ h2{
 }
 
 h4{
-	font-family: Century Gothic;
+	font-family: 'Century Gothic';
 	background: #5769B8;
 	text-align: center;
 	font-weight: bold;
@@ -30,7 +30,7 @@ h4{
 }
 
 h3{
-	font-family: Century Gothic;
+	font-family: 'Century Gothic';
 	font-size: 1.2em!important;
 	text-align: center;
 	color: white;
@@ -48,16 +48,16 @@ h3{
 	float: right;
 	width: 50%;
 	height: 100%;
-    background: #00BFFF;
-    border-radius: 4px;
-    text-align: center;
+  background: #00BFFF;
+  border-radius: 4px;
+  text-align: center;
 }
 
 #paragrafos{
 	height: 90%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
@@ -74,7 +74,7 @@ p{
 	width: 80%;
 	text-align: center;
 	background: white;
-	font-family: Century Gothic;
+	font-family: 'Century Gothic';
 	padding: 10px;
 	border: 3px solid transparent;
 	border-radius: 4px;
@@ -94,7 +94,6 @@ p:hover, p:focus{
 	cursor: pointer;
 	margin: 10px auto;
 }
-
 
 /* ============================================================================= BLOCOS */
 #telaInicial, #telaJogo, #telaFinal{

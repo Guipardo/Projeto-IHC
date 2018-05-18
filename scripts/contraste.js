@@ -2,7 +2,7 @@ function mudaIcone(id,arquivo,formato)
 {
   caminho = "imagens/icones/";
   link = caminho + arquivo + "." + formato;
-  if(document.getElementById(id) != null)
+  if(document.getElementById(id) !== null)
   {
     document.getElementById(id).setAttribute("src",link);
   }
@@ -18,11 +18,13 @@ function mudaSom(classe,arquivo,formato)
   }
 }
 
-function mudaTema(link,arquivo)
+function mudaTema(link,nome_arquivo)
 {
-  var estilo = document.getElementById(link);
-  var caminho = "estilos/temas/";
-  estilo.setAttribute("href",caminho + arquivo + ".css");
+    var estilo = document.getElementById(link);
+    var caminho = "estilos/temas/";
+    var arquivo = caminho + nome_arquivo + ".css";
+    estilo.setAttribute("href",arquivo);
+    sessionStorage.setItem('estilo', nome_arquivo);
 }
 
 function iconesBranco()
@@ -92,3 +94,27 @@ function temaBranco()
   mudaTema("temas","temaBranco");
   iconesBranco();
 }
+
+function carregarTema()
+{
+  var tema = sessionStorage.getItem('estilo');
+  switch (tema) {
+    case "temaBranco":
+      temaBranco();
+      break;
+    case "temaPreto":
+      temaPreto();
+      break;
+    case "temaAmarelo":
+      temaAmarelo();
+      break;
+    case "temaAzul":
+      temaAzul();
+      break;
+    default:
+      temaBranco();
+      break;
+  }
+}
+
+carregarTema();

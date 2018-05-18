@@ -2,6 +2,7 @@
 
 /* ============================================================================= CONFIGURAÇÕES GERAIS */
 body { font-family: Arial, sans-serif; }
+a { text-decoration: none; }
 
 .imagemCorpo
 {
@@ -10,16 +11,17 @@ body { font-family: Arial, sans-serif; }
   float:left;
   margin-right: 1em;
 }
+
 .conteudo video
 {
-    width: 100%;
-    height: auto;
-    border: solid 1px black;
+  width: 100%;
+  height: auto;
+  border: solid 1px black;
 }
 
 .icones
 {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .bloco-partes-corpo
@@ -107,9 +109,6 @@ body { font-family: Arial, sans-serif; }
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-flex: 0 0 auto;
-      -ms-flex-positive: 0 0 auto;
-          flex-grow: 0 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -132,14 +131,11 @@ body { font-family: Arial, sans-serif; }
 
 .cabecalho
 {
-  clear: left;
-  width: 100%;
   padding: 1em;
 }
 
 .rodape
 {
-  width: auto;
   margin-top: 1em;
 }
 
@@ -152,8 +148,8 @@ body { font-family: Arial, sans-serif; }
 
 #tituloTeste
 {
-    position:absolute;
-    left: 300px;
+  position:absolute;
+  left: 300px;
 }
 
 #navegacao

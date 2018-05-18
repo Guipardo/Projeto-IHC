@@ -75,7 +75,7 @@ $(".controls").on("click", "li", function() {
           coors.y -= obj.offsetTop;
         }
 
-        while ((obj = obj.offsetParent) != null);
+        while ((obj = obj.offsetParent) !== null);
       }
 
       drawer[event.type](coors);

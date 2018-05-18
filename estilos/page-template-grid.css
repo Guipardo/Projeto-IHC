@@ -25,23 +25,27 @@
   grid-area:navegacao;
 }
 
+.conteiner
+{
+  margin: 0 auto;
+  width: 90%;
+  -ms-grid-columns: 90%;
+      grid-template-columns: 90%;
+      grid-template-areas:
+    " contraste "
+    " cabecalho "
+    " navegacao "
+    " conteudo "
+    " rodape ";
+}
+
 /* ============================================================================= TELA PEQUENA */
 @media only screen and (max-width:519px)
 {
   .conteiner
   {
-      margin: 0 auto;
-      width: 90%;
-      -ms-grid-columns: 90%;
-          grid-template-columns: 90%;
       -ms-grid-rows: 18em 10em 6em auto 4em;
           grid-template-rows: 18em 10em 6em auto 4em;
-                      grid-template-areas:
-        " contraste "
-        " cabecalho "
-        " navegacao "
-        " conteudo "
-        " rodape ";
   }
 }
 
@@ -50,18 +54,8 @@
 {
   .conteiner
   {
-      margin: 0 auto;
-      width: 90%;
-      -ms-grid-columns: 90%;
-          grid-template-columns: 90%;
       -ms-grid-rows: 8em 10em 6em auto 4em;
           grid-template-rows: 8em 10em 6em auto 4em;
-                      grid-template-areas:
-        " contraste "
-        " cabecalho "
-        " navegacao "
-        " conteudo "
-        " rodape ";
   }
 }
 
@@ -71,18 +65,8 @@
 {
   .conteiner
   {
-      margin: 0 auto;
-      width:90%;
-      -ms-grid-columns: 90%;
-          grid-template-columns: 90%;
       -ms-grid-rows: 6em 10em 6em auto 4em;
           grid-template-rows: 6em 10em 6em auto 4em;
-                      grid-template-areas:
-        " contraste "
-        " cabecalho "
-        " navegacao "
-        " conteudo "
-        " rodape ";
   }
 }
 
@@ -91,17 +75,7 @@
 {
   .conteiner
   {
-      margin: 0 auto;
-      width:90%;
-      -ms-grid-columns: 90%;
-          grid-template-columns: 90%;
       -ms-grid-rows: 4em 9em 6em auto 4em;
           grid-template-rows: 4em 9em 6em auto 4em;
-                      grid-template-areas:
-        " contraste "
-        " cabecalho "
-        " navegacao "
-        " conteudo "
-        " rodape ";
   }
 }

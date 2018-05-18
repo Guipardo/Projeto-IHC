@@ -52,8 +52,8 @@
 		var showScore = "Sua Pontuação: " + calcScore +"/" + questionCounter;
 
 		if (calcScore === questionCounter) {
-			showScore = showScore + "&nbsp; <strong>Pontuação Perfeita!</strong>"
-		};
+			showScore = showScore + "&nbsp; <strong>Pontuação Perfeita!</strong>";
+		}
 		document.getElementById('userScore').innerHTML = showScore;
 	}
 

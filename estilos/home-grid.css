@@ -1,11 +1,21 @@
 .conteiner
 {
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 4.5em;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  margin: 0.5em auto;
+  width: 90%;
+  grid-gap: 4.5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-grid-columns: 90%;
+          grid-template-columns: 90%;
+  grid-template-areas:
+        " contraste "
+        " cabecalho "
+        " navegacao "
+        " conteudo "
+        " rodape ";
 }
 
 .menu__contraste
@@ -41,6 +51,11 @@
           flex:1;
 }
 
+#conteudo section
+{
+    margin-bottom: 10em;
+}
+
 .cabecalho
 {
   grid-area:cabecalho;
@@ -66,23 +81,8 @@
 {
   .conteiner
   {
-      margin: 0.5em auto;
-      width: 90%;
-      -ms-grid-columns: 90%;
-          grid-template-columns: 90%;
       -ms-grid-rows: 5em 6em 2em auto 5em;
           grid-template-rows: 5em 6em 2em auto 5em;
-                      grid-template-areas:
-        " contraste "
-        " cabecalho "
-        " navegacao "
-        " conteudo "
-        " rodape ";
-  }
-
-  #conteudo section
-  {
-      margin-bottom: 10em;
   }
 }
 
@@ -91,23 +91,8 @@
 {
   .conteiner
   {
-      margin: 0.5em auto;
-      width: 90%;
-      -ms-grid-columns: 90%;
-          grid-template-columns: 90%;
       -ms-grid-rows: 2em 10em 2em auto 3em;
           grid-template-rows: 2em 10em 2em auto 3em;
-                      grid-template-areas:
-        " contraste "
-        " cabecalho "
-        " navegacao "
-        " conteudo "
-        " rodape ";
-  }
-
-  #conteudo section
-  {
-      margin-bottom: 10em;
   }
 }
 
@@ -116,23 +101,8 @@
 {
   .conteiner
   {
-      margin: 0.5em auto;
-      width: 90%;
-      -ms-grid-columns: 90%;
-          grid-template-columns: 90%;
       -ms-grid-rows: 2em 12em 2em auto 3em;
           grid-template-rows: 2em 12em 2em auto 3em;
-                      grid-template-areas:
-        " contraste "
-        " cabecalho "
-        " navegacao "
-        " conteudo "
-        " rodape ";
-  }
-
-  #conteudo section
-  {
-      margin-bottom: 10em;
   }
 }
 
@@ -141,22 +111,7 @@
 {
   .conteiner
   {
-      margin: 0.5em auto;
-      width: 90%;
-      -ms-grid-columns: 90%;
-          grid-template-columns: 90%;
       -ms-grid-rows: 0em 4em 0em auto 2em;
           grid-template-rows: 0em 4em 0em auto 2em;
-                      grid-template-areas:
-        " contraste "
-        " cabecalho "
-        " navegacao "
-        " conteudo "
-        " rodape ";
-  }
-
-  #conteudo section
-  {
-      margin-bottom: 2em;
   }
 }

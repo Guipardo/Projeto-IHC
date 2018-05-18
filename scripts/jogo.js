@@ -107,8 +107,8 @@ function compararImagemETexto(imagem, texto){
 				  imagens[i].style.border = '3px solid transparent';
 			}
 			var paragrafos = document.getElementsByTagName('p');
-				for (var i = 0; i < paragrafos.length; i++) {
-				  paragrafos[i].style.border = '3px solid transparent';
+				for (var j = 0; j < paragrafos.length; j++) {
+				  paragrafos[j].style.border = '3px solid transparent';
 			}
 			partesDoCorpo = [];
 			somComemoracao.play();
