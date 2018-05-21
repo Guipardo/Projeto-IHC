@@ -60,8 +60,8 @@
         <section id="conteudo">
           <!-- LEITURA -->
           <section id="leitura" class="opcao">
-            <input type="button" class="botao__audio icones" onclick="javascript:audioLeitura()" onmouseover="javascript:audioLeitura()"/>
-            <audio id="audioLeitura" src="audios/" ></audio>
+            <input type="button" class="botao__audio icones" onmouseout="javascript:pararAudio('audioLeitura')" onmouseover="javascript:audioLeitura()"/>
+            <audio id="audioLeitura" src="audios/home/audioLeitura.mp3" ></audio>
             <a href="leitura.html">
               <figure>
                 <img class="icones" id="iconeLeitura" alt="iconeLeitura" src="imagens/icones/LEITURA_BRANCO.png"/>
@@ -72,9 +72,9 @@
 
           <!-- CONHECENDO O CORPO HUMANO -->
           <section id="corpoHumano" class="opcao">
-            <input type="button" class="botao__audio icones" onclick="javascript:audioCorpo()" onmouseover="javascript:audioCorpo()"/>
+            <input type="button" class="botao__audio icones" onmouseout="javascript:pararAudio('audioCorpo')" onmouseover="javascript:audioCorpo()"/>
             <a href="conhecendo.html">
-              <audio id="audioCorpo" src="audios/" ></audio>
+              <audio id="audioCorpo" src="audios/home/audioCorpo.mp3" ></audio>
               <figure>
                 <img class="icones" id="iconeCorpo" alt="iconeCorpo" src="imagens/icones/CORPO_BRANCO.png"/>
                 <figcaption> <h1 class="titulo"> Conhecendo o corpo humano </h1> </figcaption>
@@ -84,8 +84,8 @@
 
           <!-- VIDEOS -->
           <section id="videos" class="opcao">
-            <input type="button" class="botao__audio icones" onclick="javascript:audioVideo()" onmouseover="javascript:audioVideo()"/>
-            <audio id="audioVideo" src="audios/" ></audio>
+            <input type="button" class="botao__audio icones" onmouseout="javascript:pararAudio('audioVideo')" onmouseover="javascript:audioVideo()"/>
+            <audio id="audioVideo" src="audios/home/audioVideo.mp3" ></audio>
             <a href="videos.html">
               <figure>
                 <img class="icones" id="iconeVideo" alt="iconeVideo" src="imagens/icones/VIDEO_BRANCO.png"/>
@@ -96,8 +96,8 @@
 
           <!-- JOGOS -->
           <section id="jogos" class="opcao">
-            <input type="button" class="botao__audio icones" onclick="javascript:audioJogo()" onmouseover="javascript:audioJogo()"/>
-            <audio id="audioJogo" src="audios/" ></audio>
+            <input type="button" class="botao__audio icones" onmouseout="javascript:pararAudio(''audioJogo)" onmouseover="javascript:audioJogo()"/>
+            <audio id="audioJogo" src="audios/home/audioJogo.mp3" ></audio>
             <a href="jogos.html">
               <figure>
                 <img class="icones" id="iconeJogo" alt="iconeJogo" src="imagens/icones/JOGO_BRANCO.png"/>
@@ -108,8 +108,8 @@
 
           <!-- DESENHO -->
           <section id="desenho" class="opcao">
-            <input type="button" class="botao__audio icones" onclick="javascript:audioDesenho()" onmouseover="javascript:audioDesenho()"/>
-            <audio id="audioDesenho" src="audios/" ></audio>
+            <input type="button" class="botao__audio icones" onmouseout="javascript:pararAudio('audioDesenho')" onmouseover="javascript:audioDesenho()"/>
+            <audio id="audioDesenho" src="audios/home/audioDesenho.mp3" ></audio>
             <a href="desenho.html">
               <figure>
                 <img class="icones" id="iconeLapis" alt="iconeLapis" src="imagens/icones/LAPIS_BRANCO.png"/>
@@ -120,8 +120,8 @@
 
           <!-- TESTES -->
           <section id="testes" class="opcao">
-            <input type="button" class="botao__audio icones" onclick="javascript:audioLampada()" onmouseover="javascript:audioLampada()"/>
-            <audio id="audioLampada" src="audios/"  ></audio>
+            <input type="button" class="botao__audio icones" onmouseout="javascript:pararAudio('audioLampada')" onmouseover="javascript:audioLampada()"/>
+            <audio id="audioLampada" src="audios/home/audioLampada.mp3"  ></audio>
             <a href="teste.html">
               <figure>
                 <img class="icones" id="iconeLampada" alt="iconeLampada" src="imagens/icones/LAMPADA_BRANCO.png"/>
@@ -129,10 +129,7 @@
               </figure>
             </a>
           </section>
-
         </section>
-
-
         <!-- RODAPÉ -->
         <footer class="rodape" id="rodape">
             @Faculdade de Computação e Informática - Universidade Presbiteriana Mackenzie

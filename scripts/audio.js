@@ -1,3 +1,10 @@
+function pararAudio(id)
+{
+    var audio = document.getElementById(id);
+    audio.pause();
+    audio.currentTime = 0;
+}
+
 //  ============================================================================ MENUS PRINCIPAIS
 function audioLeitura()
 {
@@ -28,8 +35,6 @@ function audioDesenho()
 {
     document.getElementById("audioDesenho").play();
 }
-
-
 // ============================================================================ LEITURA DO CORPO HUMANO
 function audioCerebro()
 {
@@ -93,15 +98,6 @@ function audioSistemaUrinario()
     audio.currentTime = 0.1;
     audio.play();
 }
-
-function pararAudio(id)
-{
-    var audio = document.getElementById(id);
-    audio.pause();
-    audio.currentTime = 0;
-}
-
-
 // =============================================================================  QUIZ
 
 function audiopergunta1()
