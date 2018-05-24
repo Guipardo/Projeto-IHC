@@ -24,23 +24,37 @@
 
 		function correctAnswer (correctStringNo, qNumber) {
 			console.log("qNumber: " + qNumber);
-			return ("A resposta correta para questão #" + qNumber + ": &nbsp;<strong>" +
+			return ("<img src='imagens/quiz/errado.png' class='botao__question'>" + "  A resposta correta para questão #" + qNumber + ": &nbsp;<strong>" +
+				(document.getElementById(correctStringNo).innerHTML) + "</strong>");
+			}
+        
+        function showAnswer (correctStringNo, qNumber) {
+			console.log("qNumber: " + qNumber);
+			return ("<img src='imagens/quiz/correto.png' class='botao__question'>" + "  A questão #" + qNumber + " está correta: &nbsp;<strong>" +
 				(document.getElementById(correctStringNo).innerHTML) + "</strong>");
 			}
 
 
 		if (answerScore('q1') === 0) {
 			document.getElementById('correctAnswer1').innerHTML = correctAnswer('correctString1', 1);
-		}
+		}else{
+            document.getElementById('correctAnswer1').innerHTML = showAnswer('correctString1', 1);
+        }
 		if (answerScore('q2') === 0) {
 			document.getElementById('correctAnswer2').innerHTML = correctAnswer('correctString2', 2);
-		}
+		}else{
+            document.getElementById('correctAnswer2').innerHTML = showAnswer('correctString2', 2);
+        }
 		if (answerScore('q3') === 0) {
 			document.getElementById('correctAnswer3').innerHTML = correctAnswer('correctString3', 3);
-		}
+		}else{
+            document.getElementById('correctAnswer3').innerHTML = showAnswer('correctString3', 3);
+        }
 		if (answerScore('q4') === 0) {
 			document.getElementById('correctAnswer4').innerHTML = correctAnswer('correctString4', 4);
-		}
+		}else{
+            document.getElementById('correctAnswer4').innerHTML = showAnswer('correctString4', 4);
+        }
 
 		var questionCountArray = document.getElementsByClassName('question');
 

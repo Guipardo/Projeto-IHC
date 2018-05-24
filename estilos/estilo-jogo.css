@@ -119,8 +119,8 @@ p:hover, p:focus{
 }
 
 #componentesIniciais{
-	margin-top: 10%;
-	margin-bottom: 10%;
+	margin-top: 15%;
+	margin-bottom: 15%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;

@@ -21,6 +21,16 @@ p.question {
   vertical-align:text-bottom;
 }
 
+.botao__question
+{
+  border-radius: 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 22px;
+  width: 22px;
+  vertical-align:text-bottom;
+}
+
 h2.quizHeader {
   font-family: Arial, sans-serif;
   font-weight:normal;
